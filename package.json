@@ -1,0 +1,26 @@
+{
+  "name": "project-management-ai",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node src/test-manager.js",
+    "test:basic": "node src/test-manager.js basic",
+    "test:custom": "node src/test-manager.js custom",
+    "test:backlog": "node src/test-manager.js backlog",
+    "test:all": "node src/test-manager.js all"
+  },
+  "keywords": [
+    "ai",
+    "project-management",
+    "agent"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "An AI agent for project management that generates comprehensive project plans",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "ollama": "^0.5.14"
+  }
+}
