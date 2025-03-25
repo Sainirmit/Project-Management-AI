@@ -1,0 +1,14 @@
+{
+  "id": "6a659c46-20e1-4b32-8208-c3da01ee86bb",
+  "type": "message_processed",
+  "timestamp": "2025-03-22T19:24:15.904Z",
+  "sessionId": "50ea6ce5-50a6-49e0-b596-5d1a2d4adda9",
+  "runId": "95c4876f-3368-4d91-894a-0687ab5a5a19",
+  "data": {
+    "channel": "project.init.request",
+    "messageId": "e7e60591-99ee-4c61-96a0-3917318e819e",
+    "agentId": "ProjectPlanGenerator-e867237e",
+    "duration": 5,
+    "success": true
+  }
+}

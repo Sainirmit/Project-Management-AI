@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Enhanced Error Response Schema",
+  "description": "Schema for error responses with detailed diagnostics",
+  "type": "object",
+  "required": ["success", "error"],
+  "properties": {
+    "success": {
+      "type": "boolean",
+      "enum": [false],
+      "description": "Indicates that the operation failed"
+    },
+    "error": {
+      "type": "object",
+      "required": ["message"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique error identifier for tracking"
+        },
+        "message": {
+          "type": "string",
+          "description": "User-friendly error message"
+        },
+        "code": {
+          "type": "string",
+          "description": "Error code for programmatic handling"
+        },
+        "context": {
+          "type": "string",
+          "description": "Context in which the error occurred"
+        },
+        "details": {
+          "type": "string",
+          "description": "Detailed technical explanation (for development only)"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the error occurred"
+        }
+      }
+    },
+    "stageFailed": {
+      "type": "string",
+      "description": "The processing stage that failed"
+    },
+    "errorId": {
+      "type": "string",
+      "description": "Unique error identifier (alternative location)"
+    },
+    "resumable": {
+      "type": "boolean",
+      "description": "Whether the operation can be resumed from a saved state"
+    },
+    "currentState": {
+      "type": "object",
+      "description": "Current state at the time of failure (if available)"
+    },
+    "projectId": {
+      "type": "string",
+      "description": "ID of the project being processed"
+    },
+    "diagnostics": {
+      "type": "object",
+      "description": "Additional diagnostic information",
+      "properties": {
+        "retriesAttempted": {
+          "type": "integer",
+          "description": "Number of retries attempted before failing"
+        },
+        "failurePoint": {
+          "type": "string",
+          "description": "Specific operation that failed"
+        },
+        "resourceState": {
+          "type": "object",
+          "description": "State of system resources at time of failure"
+        },
+        "suggestedAction": {
+          "type": "string",
+          "description": "Suggested action to resolve the error"
+        }
+      }
+    }
+  }
+}

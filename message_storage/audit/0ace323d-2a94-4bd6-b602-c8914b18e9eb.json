@@ -1,0 +1,13 @@
+{
+  "id": "0ace323d-2a94-4bd6-b602-c8914b18e9eb",
+  "type": "monitor",
+  "timestamp": "2025-03-22T19:19:28.274Z",
+  "sessionId": "65d3d0d7-3ff1-4380-9343-3a51113f5028",
+  "data": {
+    "eventType": "warning",
+    "timestamp": "2025-03-22T19:19:28.274Z",
+    "type": "unhandled",
+    "message": "Unhandled message on channel: project.init.request",
+    "data": {}
+  }
+}

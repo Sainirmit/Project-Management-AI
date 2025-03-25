@@ -9,7 +9,10 @@
     "test:basic": "node src/test-manager.js basic",
     "test:custom": "node src/test-manager.js custom",
     "test:backlog": "node src/test-manager.js backlog",
-    "test:all": "node src/test-manager.js all"
+    "test:multiagent": "node src/test-manager.js multiagent",
+    "test:all": "node src/test-manager.js all",
+    "server": "node src/server.js",
+    "simple-server": "node src/simple-server.js"
   },
   "keywords": [
     "ai",
@@ -20,6 +23,8 @@
   "license": "ISC",
   "description": "An AI agent for project management that generates comprehensive project plans",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "node-fetch": "^3.3.2",
     "ollama": "^0.5.14"
   }

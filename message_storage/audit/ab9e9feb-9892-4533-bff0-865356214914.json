@@ -1,0 +1,10 @@
+{
+  "id": "ab9e9feb-9892-4533-bff0-865356214914",
+  "type": "test",
+  "timestamp": "2025-03-22T19:27:28.595Z",
+  "sessionId": "29550ccd-45e6-46b1-8824-cae2e0fd0bf9",
+  "data": {
+    "timestamp": "2025-03-22T19:27:28.595Z",
+    "message": "Test event"
+  }
+}

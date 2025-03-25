@@ -1,0 +1,2948 @@
+{
+  "runs": [
+    {
+      "runId": "run_1742805136485",
+      "timestamp": "2025-03-24T08:32:16.485Z",
+      "testName": "Basic Project Plan",
+      "projectName": "E-commerce Mobile App",
+      "plan": {
+        "project": {
+          "name": "E-commerce Mobile App",
+          "type": "Mobile Application",
+          "description": "A full-featured e-commerce mobile app with user authentication, product browsing, shopping cart, checkout, and order tracking.",
+          "timeline": "3 months",
+          "priority": "High",
+          "techStack": [
+            "React Native",
+            "Firebase",
+            "Node.js",
+            "Express",
+            "MongoDB"
+          ],
+          "teamMembers": [
+            {
+              "id": "tm1",
+              "name": "Alex",
+              "roles": [
+                null
+              ],
+              "experience": "3 years",
+              "skills": [
+                "React Native",
+                "JavaScript",
+                "Mobile Development"
+              ],
+              "availability": 40
+            },
+            {
+              "id": "tm2",
+              "name": "Taylor",
+              "roles": [
+                null
+              ],
+              "experience": "4 years",
+              "skills": [
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "Firebase"
+              ],
+              "availability": 40
+            },
+            {
+              "id": "tm3",
+              "name": "Jordan",
+              "roles": [
+                null
+              ],
+              "experience": "2 years",
+              "skills": [
+                "UI Design",
+                "UX Research",
+                "Frontend",
+                "CSS"
+              ],
+              "availability": 35
+            }
+          ],
+          "title": "E-commerce Mobile App",
+          "phases": [],
+          "objectives": [],
+          "constraints": [],
+          "assumptions": [],
+          "successCriteria": []
+        },
+        "sprints": [
+          {
+            "id": "Sprint 1",
+            "name": "Sprint 1",
+            "goal": "Sprint 1 execution",
+            "startDate": "TBD",
+            "endDate": "TBD",
+            "keyDeliverables": [
+              "\": [\"Project scope document\", \"Development environment setup\"],",
+              "\""
+            ],
+            "objectives": [],
+            "mainPhases": [],
+            "estimatedVelocity": 0,
+            "resourceUtilization": 21,
+            "isOverallocated": false,
+            "estimatedEffort": 32
+          },
+          {
+            "id": "Sprint 2",
+            "name": "Sprint 2",
+            "goal": "Sprint 2 execution",
+            "startDate": "TBD",
+            "endDate": "TBD",
+            "keyDeliverables": [
+              "\": [\"Wireframes\", \"Mockups\"],",
+              "\""
+            ],
+            "objectives": [],
+            "mainPhases": [],
+            "estimatedVelocity": 0,
+            "resourceUtilization": 21,
+            "isOverallocated": false,
+            "estimatedEffort": 32
+          }
+        ],
+        "tasks": [
+          {
+            "id": "T1",
+            "title": "Draft Project Scope Document",
+            "description": "Create and draft project scope document, including objectives, key deliverables, timeline, and team capacity.",
+            "category": "Documentation",
+            "estimatedHours": 8,
+            "priority": "High",
+            "assigneeRole": "Project Manager",
+            "dependencies": [],
+            "acceptanceCriteria": [
+              "The project scope document should be clear and concise.",
+              "All objectives, key deliverables, timeline, and team capacity are accurately represented."
+            ],
+            "generatedAt": "2025-03-24T08:14:56.093Z",
+            "sprintId": "Sprint 1",
+            "sprintName": "Sprint 1",
+            "sprintStartDate": "TBD",
+            "sprintEndDate": "TBD",
+            "assignedTo": "Project Manager",
+            "subtaskCount": 4,
+            "subtaskIds": [
+              "T1.1",
+              "T1.2",
+              "T1.3",
+              "T1.4"
+            ]
+          },
+          {
+            "id": "T2",
+            "title": "Set Up Development Environment",
+            "description": "Configure and set up the development environment for the project based on the chosen tech stack.",
+            "category": "DevOps",
+            "estimatedHours": 12,
+            "priority": "High",
+            "assigneeRole": "DevOps Engineer",
+            "dependencies": [],
+            "acceptanceCriteria": [
+              "The development environment should be properly set up and functional.",
+              "All necessary tools and dependencies are correctly installed."
+            ],
+            "generatedAt": "2025-03-24T08:14:56.094Z",
+            "sprintId": "Sprint 1",
+            "sprintName": "Sprint 1",
+            "sprintStartDate": "TBD",
+            "sprintEndDate": "TBD",
+            "assignedTo": "DevOps Engineer",
+            "subtaskCount": 6,
+            "subtaskIds": [
+              "T2.1",
+              "T2.2",
+              "T2.3",
+              "T2.4",
+              "T2.5",
+              "T2.6"
+            ]
+          },
+          {
+            "id": "T3",
+            "title": "Design Project Layout",
+            "description": "Create a wireframe or mockup of the project layout, including user interface design.",
+            "category": "Design",
+            "estimatedHours": 16,
+            "priority": "High",
+            "assigneeRole": "UI/UX Designer",
+            "dependencies": [
+              "Draft Project Scope Document"
+            ],
+            "acceptanceCriteria": [
+              "The project layout should be visually appealing and user-friendly.",
+              "All necessary elements are included in the design."
+            ],
+            "generatedAt": "2025-03-24T08:14:56.094Z",
+            "sprintId": "Sprint 1",
+            "sprintName": "Sprint 1",
+            "sprintStartDate": "TBD",
+            "sprintEndDate": "TBD",
+            "assignedTo": "UI/UX Designer",
+            "subtaskCount": 6,
+            "subtaskIds": [
+              "T3.1",
+              "T3.2",
+              "T3.3",
+              "T3.4",
+              "T3.5",
+              "T3.6"
+            ]
+          },
+          {
+            "id": "T4",
+            "title": "Implement Frontend Components",
+            "description": "Develop frontend components based on the approved design, ensuring compatibility with the chosen tech stack.",
+            "category": "Frontend",
+            "estimatedHours": 16,
+            "priority": "High",
+            "assigneeRole": "Frontend Developer",
+            "dependencies": [
+              "Design Project Layout"
+            ],
+            "acceptanceCriteria": [
+              "The implemented frontend components are functional and visually consistent with the design.",
+              "All necessary interactions and animations are correctly implemented."
+            ],
+            "generatedAt": "2025-03-24T08:14:56.094Z",
+            "sprintId": "Sprint 1",
+            "sprintName": "Sprint 1",
+            "sprintStartDate": "TBD",
+            "sprintEndDate": "TBD",
+            "assignedTo": "Frontend Developer",
+            "subtaskCount": 6,
+            "subtaskIds": [
+              "T4.1",
+              "T4.2",
+              "T4.3",
+              "T4.4",
+              "T4.5",
+              "T4.6"
+            ]
+          },
+          {
+            "id": "T5",
+            "title": "Set Up Backend Services",
+            "description": "Create and configure backend services, including APIs, databases, and server-side logic.",
+            "category": "Backend",
+            "estimatedHours": 16,
+            "priority": "High",
+            "assigneeRole": "Backend Developer",
+            "dependencies": [
+              "Set Up Development Environment"
+            ],
+            "acceptanceCriteria": [
+              "The implemented backend services are functional and secure.",
+              "All necessary APIs, databases, and server-side logic are correctly set up."
+            ],
+            "generatedAt": "2025-03-24T08:14:56.094Z",
+            "sprintId": "Sprint 1",
+            "sprintName": "Sprint 1",
+            "sprintStartDate": "TBD",
+            "sprintEndDate": "TBD",
+            "assignedTo": "Backend Developer",
+            "subtaskCount": 5,
+            "subtaskIds": [
+              "T5.1",
+              "T5.2",
+              "T5.3",
+              "T5.4",
+              "T5.5"
+            ]
+          },
+          {
+            "id": "T6",
+            "title": "Write Automated Tests",
+            "description": "Develop automated tests for the frontend and backend components to ensure their functionality and compatibility.",
+            "category": "Testing",
+            "estimatedHours": 16,
+            "priority": "High",
+            "assigneeRole": "Quality Assurance Engineer",
+            "dependencies": [
+              "Implement Frontend Components",
+              "Set Up Backend Services"
+            ],
+            "acceptanceCriteria": [
+              "All tests should pass and cover all critical functionalities.",
+              "Tests should be efficient, reliable, and maintainable."
+            ],
+            "generatedAt": "2025-03-24T08:14:56.094Z",
+            "sprintId": "Sprint 1",
+            "sprintName": "Sprint 1",
+            "sprintStartDate": "TBD",
+            "sprintEndDate": "TBD",
+            "assignedTo": "Quality Assurance Engineer",
+            "subtaskCount": 7,
+            "subtaskIds": [
+              "T6.1",
+              "T6.2",
+              "T6.3",
+              "T6.4",
+              "T6.5",
+              "T6.6",
+              "T6.7"
+            ]
+          },
+          {
+            "id": "T7",
+            "title": "Design Preliminary Wireframes",
+            "description": "Create wireframes for the main pages, including homepage, product page, and checkout page.",
+            "category": "Design",
+            "estimatedHours": 8,
+            "priority": "High",
+            "assigneeRole": "Designer",
+            "dependencies": [],
+            "acceptanceCriteria": [
+              "Wireframes should be clearly labeled and easily understandable.",
+              "Each wireframe must include necessary UI elements."
+            ],
+            "generatedAt": "2025-03-24T08:16:36.047Z",
+            "sprintId": "Sprint 2",
+            "sprintName": "Sprint 2",
+            "sprintStartDate": "TBD",
+            "sprintEndDate": "TBD",
+            "assignedTo": "Designer",
+            "subtaskCount": 5,
+            "subtaskIds": [
+              "T7.1",
+              "T7.2",
+              "T7.3",
+              "T7.4",
+              "T7.5"
+            ]
+          },
+          {
+            "id": "T8",
+            "title": "Refine Wireframes into Mockups",
+            "description": "Convert wireframes into high-fidelity mockups, including UI/UX details and visual design.",
+            "category": "Design",
+            "estimatedHours": 12,
+            "priority": "High",
+            "assigneeRole": "Designer",
+            "dependencies": [
+              "Task 1: Design Preliminary Wireframes"
+            ],
+            "acceptanceCriteria": [
+              "Mockups should be visually appealing and adhere to brand guidelines.",
+              "All UI/UX elements should be properly implemented."
+            ],
+            "generatedAt": "2025-03-24T08:16:36.048Z",
+            "sprintId": "Sprint 2",
+            "sprintName": "Sprint 2",
+            "sprintStartDate": "TBD",
+            "sprintEndDate": "TBD",
+            "assignedTo": "Designer",
+            "subtaskCount": 4,
+            "subtaskIds": [
+              "T8.1",
+              "T8.2",
+              "T8.3",
+              "T8.4"
+            ]
+          },
+          {
+            "id": "T9",
+            "title": "Create Frontend Components Based on Mockups",
+            "description": "Develop frontend components based on the provided mockups, ensuring they are responsive and accessible.",
+            "category": "Frontend",
+            "estimatedHours": 16,
+            "priority": "High",
+            "assigneeRole": "Developer",
+            "dependencies": [
+              "Task 2: Refine Wireframes into Mockups"
+            ],
+            "acceptanceCriteria": [
+              "Components should be properly implemented according to the mockups.",
+              "All components must be responsive and accessible."
+            ],
+            "generatedAt": "2025-03-24T08:16:36.048Z",
+            "sprintId": "Sprint 2",
+            "sprintName": "Sprint 2",
+            "sprintStartDate": "TBD",
+            "sprintEndDate": "TBD",
+            "assignedTo": "Developer",
+            "subtaskCount": 5,
+            "subtaskIds": [
+              "T9.1",
+              "T9.2",
+              "T9.3",
+              "T9.4",
+              "T9.5"
+            ]
+          },
+          {
+            "id": "T10",
+            "title": "Implement Backend API for Product Functionality",
+            "description": "Develop the backend API for product-related functionality, such as retrieving product details and handling add to cart.",
+            "category": "Backend",
+            "estimatedHours": 16,
+            "priority": "High",
+            "assigneeRole": "Developer",
+            "dependencies": [],
+            "acceptanceCriteria": [
+              "API should be properly implemented and tested.",
+              "API endpoints must return expected data."
+            ],
+            "generatedAt": "2025-03-24T08:16:36.048Z",
+            "sprintId": "Sprint 2",
+            "sprintName": "Sprint 2",
+            "sprintStartDate": "TBD",
+            "sprintEndDate": "TBD",
+            "assignedTo": "Developer",
+            "subtaskCount": 5,
+            "subtaskIds": [
+              "T10.1",
+              "T10.2",
+              "T10.3",
+              "T10.4",
+              "T10.5"
+            ]
+          },
+          {
+            "id": "T11",
+            "title": "Integrate Frontend Components with Backend API",
+            "description": "Connect the frontend components to the backend API, ensuring proper data flow between client and server.",
+            "category": "Frontend",
+            "estimatedHours": 8,
+            "priority": "High",
+            "assigneeRole": "Developer",
+            "dependencies": [
+              "Task 3: Create Frontend Components Based on Mockups",
+              "Task 4: Implement Backend API for Product Functionality"
+            ],
+            "acceptanceCriteria": [
+              "Frontend components should fetch and display data from the backend correctly.",
+              "Any interaction with the API (e.g., add to cart) should work as expected."
+            ],
+            "generatedAt": "2025-03-24T08:16:36.049Z",
+            "sprintId": "Sprint 2",
+            "sprintName": "Sprint 2",
+            "sprintStartDate": "TBD",
+            "sprintEndDate": "TBD",
+            "assignedTo": "Developer",
+            "subtaskCount": 5,
+            "subtaskIds": [
+              "T11.1",
+              "T11.2",
+              "T11.3",
+              "T11.4",
+              "T11.5"
+            ]
+          },
+          {
+            "id": "T12",
+            "title": "Perform Functional Testing on Implemented Features",
+            "description": "Test the implemented features for functionality, usability, and performance.",
+            "category": "Testing",
+            "estimatedHours": 12,
+            "priority": "Medium",
+            "assigneeRole": "Tester",
+            "dependencies": [
+              "Task 5: Integrate Frontend Components with Backend API"
+            ],
+            "acceptanceCriteria": [
+              "All implemented features should pass functional tests.",
+              "Usability and performance issues, if any, should be reported."
+            ],
+            "generatedAt": "2025-03-24T08:16:36.049Z",
+            "sprintId": "Sprint 2",
+            "sprintName": "Sprint 2",
+            "sprintStartDate": "TBD",
+            "sprintEndDate": "TBD",
+            "assignedTo": "Tester",
+            "subtaskCount": 5,
+            "subtaskIds": [
+              "T12.1",
+              "T12.2",
+              "T12.3",
+              "T12.4",
+              "T12.5"
+            ]
+          },
+          {
+            "id": "T13",
+            "title": "Document the Implemented Code",
+            "description": "Write clear and concise documentation for the codebase, including comments and README files.",
+            "category": "Documentation",
+            "estimatedHours": 8,
+            "priority": "Low",
+            "assigneeRole": "Developer",
+            "dependencies": [
+              "Task 6: Perform Functional Testing on Implemented Features"
+            ],
+            "acceptanceCriteria": [
+              "Documentation should be clear and easy to understand.",
+              "All important parts of the codebase should have appropriate documentation."
+            ],
+            "generatedAt": "2025-03-24T08:16:36.049Z",
+            "sprintId": "Sprint 2",
+            "sprintName": "Sprint 2",
+            "sprintStartDate": "TBD",
+            "sprintEndDate": "TBD",
+            "assignedTo": "Developer",
+            "subtaskCount": 4,
+            "subtaskIds": [
+              "T13.1",
+              "T13.2",
+              "T13.3",
+              "T13.4"
+            ]
+          },
+          {
+            "id": "T14",
+            "title": "Project Setup and Configuration",
+            "description": "Set up and configure the development environment, version control system, CI/CD pipelines, and infrastructure.",
+            "category": "DevOps",
+            "estimatedHours": 20,
+            "priority": "High",
+            "assigneeRole": "DevOps Engineer",
+            "affectedSprints": [
+              "Sprint 1",
+              "Sprint 2"
+            ],
+            "acceptanceCriteria": [
+              "Development environment is set up and working for all team members",
+              "CI/CD pipelines are configured",
+              "Infrastructure is properly set up and integrated"
+            ],
+            "generatedAt": "2025-03-24T08:18:12.359Z",
+            "sprintId": "global",
+            "sprintName": "Cross-Sprint",
+            "isGlobal": true,
+            "assignedTo": "DevOps Engineer",
+            "subtaskCount": 0,
+            "subtaskIds": []
+          },
+          {
+            "id": "T15",
+            "title": "Project-wide Documentation",
+            "description": "Create and maintain comprehensive documentation for the project, including system architecture, API references, and development guidelines.",
+            "category": "Documentation",
+            "estimatedHours": 40,
+            "priority": "High",
+            "assigneeRole": "Technical Writer",
+            "affectedSprints": [
+              "Sprint 1",
+              "Sprint 2"
+            ],
+            "acceptanceCriteria": [
+              "All project documentation is complete and up-to-date",
+              "Documentation serves as a valuable resource for the team and future developers"
+            ],
+            "generatedAt": "2025-03-24T08:18:12.359Z",
+            "sprintId": "global",
+            "sprintName": "Cross-Sprint",
+            "isGlobal": true,
+            "assignedTo": "Technical Writer",
+            "subtaskCount": 0,
+            "subtaskIds": []
+          },
+          {
+            "id": "T16",
+            "title": "Project Status Reporting",
+            "description": "Prepare and share weekly status reports detailing progress, blockers, and plans.",
+            "category": "Project Management",
+            "estimatedHours": 10,
+            "priority": "Medium",
+            "assigneeRole": "Project Manager",
+            "affectedSprints": [
+              "Sprint 1",
+              "Sprint 2"
+            ],
+            "acceptanceCriteria": [
+              "Weekly status reports are shared with stakeholders",
+              "Reports provide clear and actionable insights"
+            ],
+            "generatedAt": "2025-03-24T08:18:12.359Z",
+            "sprintId": "global",
+            "sprintName": "Cross-Sprint",
+            "isGlobal": true,
+            "assignedTo": "Project Manager",
+            "subtaskCount": 0,
+            "subtaskIds": []
+          },
+          {
+            "id": "T17",
+            "title": "Backlog Refinement",
+            "description": "Collaborate with the product owner to refine the project backlog, ensuring it is well-defined, prioritized, and ready for development.",
+            "category": "Project Management",
+            "estimatedHours": 15,
+            "priority": "Medium",
+            "assigneeRole": "Product Owner",
+            "affectedSprints": [
+              "Sprint 1",
+              "Sprint 2"
+            ],
+            "acceptanceCriteria": [
+              "Backlog items are well-defined and prioritized",
+              "Development tasks are ready for implementation"
+            ],
+            "generatedAt": "2025-03-24T08:18:12.359Z",
+            "sprintId": "global",
+            "sprintName": "Cross-Sprint",
+            "isGlobal": true,
+            "assignedTo": "Product Owner",
+            "subtaskCount": 0,
+            "subtaskIds": []
+          },
+          {
+            "id": "T18",
+            "title": "Quality Assurance Planning",
+            "description": "Plan and implement QA strategies, including test cases, automation scripts, and regression tests.",
+            "category": "QA",
+            "estimatedHours": 30,
+            "priority": "High",
+            "assigneeRole": "Quality Assurance Engineer",
+            "affectedSprints": [
+              "Sprint 1",
+              "Sprint 2"
+            ],
+            "acceptanceCriteria": [
+              "QA strategies are in place for all project components",
+              "Test cases, automation scripts, and regression tests are ready for implementation"
+            ],
+            "generatedAt": "2025-03-24T08:18:12.359Z",
+            "sprintId": "global",
+            "sprintName": "Cross-Sprint",
+            "isGlobal": true,
+            "assignedTo": "Quality Assurance Engineer",
+            "subtaskCount": 0,
+            "subtaskIds": []
+          },
+          {
+            "id": "T19",
+            "title": "Cross-sprint Integration and Dependencies Management",
+            "description": "Manage dependencies between tasks across sprints, ensuring smooth integration of new features and components.",
+            "category": "Project Management",
+            "estimatedHours": 20,
+            "priority": "High",
+            "assigneeRole": "Project Manager",
+            "affectedSprints": [
+              "Sprint 1",
+              "Sprint 2"
+            ],
+            "acceptanceCriteria": [
+              "Dependencies between tasks are clearly defined and managed",
+              "New features and components integrate smoothly"
+            ],
+            "generatedAt": "2025-03-24T08:18:12.359Z",
+            "sprintId": "global",
+            "sprintName": "Cross-Sprint",
+            "isGlobal": true,
+            "assignedTo": "Project Manager",
+            "subtaskCount": 0,
+            "subtaskIds": []
+          }
+        ],
+        "subtasks": [
+          {
+            "id": "T1.1",
+            "title": "Define Project Objectives",
+            "description": "Write clear and concise project objectives for the scope document.",
+            "category": "Documentation",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "- The project objectives are clearly stated.",
+              "- The objectives are concise and specific."
+            ],
+            "parentTaskId": "T1",
+            "generatedAt": "2025-03-24T08:18:59.227Z"
+          },
+          {
+            "id": "T1.2",
+            "title": "List Key Deliverables",
+            "description": "Create a comprehensive list of key deliverables for the project.",
+            "category": "Documentation",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Define Project Objectives"
+            ],
+            "acceptanceCriteria": [
+              "- All essential deliverables are listed.",
+              "- The list is clear and concise."
+            ],
+            "parentTaskId": "T1",
+            "generatedAt": "2025-03-24T08:18:59.227Z"
+          },
+          {
+            "id": "T1.3",
+            "title": "Outline Timeline Details",
+            "description": "Create a detailed timeline for the project, including milestones and deadlines.",
+            "category": "Documentation",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "List Key Deliverables"
+            ],
+            "acceptanceCriteria": [
+              "- The timeline is detailed and specific.",
+              "- Milestones and deadlines are clearly defined."
+            ],
+            "parentTaskId": "T1",
+            "generatedAt": "2025-03-24T08:18:59.227Z"
+          },
+          {
+            "id": "T1.4",
+            "title": "Identify Team Capacity",
+            "description": "Determine the capacity of the project team, including resources and workload distribution.",
+            "category": "Planning",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Outline Timeline Details"
+            ],
+            "acceptanceCriteria": [
+              "- The team's capacity is accurately represented.",
+              "- Resources and workload distribution are clearly defined."
+            ],
+            "parentTaskId": "T1",
+            "generatedAt": "2025-03-24T08:18:59.227Z"
+          },
+          {
+            "id": "T2.1",
+            "title": "Install Operating System Prerequisites",
+            "description": "Ensure the operating system is up-to-date and meets the minimum requirements specified for the chosen tech stack.",
+            "category": "DevOps",
+            "estimatedHours": 1,
+            "priority": "High",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "The operating system is up-to-date and meets the minimum requirements"
+            ],
+            "parentTaskId": "T2",
+            "generatedAt": "2025-03-24T08:20:07.227Z"
+          },
+          {
+            "id": "T2.2",
+            "title": "Install Development Tools",
+            "description": "Install necessary development tools such as a code editor, version control system, and package manager.",
+            "category": "DevOps",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Install Operating System Prerequisites"
+            ],
+            "acceptanceCriteria": [
+              "All development tools are correctly installed"
+            ],
+            "parentTaskId": "T2",
+            "generatedAt": "2025-03-24T08:20:07.228Z"
+          },
+          {
+            "id": "T2.3",
+            "title": "Set Up Project Repository",
+            "description": "Create and initialize a new project repository using the chosen version control system.",
+            "category": "DevOps",
+            "estimatedHours": 1,
+            "priority": "High",
+            "dependsOn": [
+              "Install Development Tools"
+            ],
+            "acceptanceCriteria": [
+              "A new project repository is created and initialized"
+            ],
+            "parentTaskId": "T2",
+            "generatedAt": "2025-03-24T08:20:07.228Z"
+          },
+          {
+            "id": "T2.4",
+            "title": "Configure Environment Variables",
+            "description": "Set up environment variables as specified in the chosen tech stack for local development.",
+            "category": "DevOps",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Install Development Tools",
+              "Set Up Project Repository"
+            ],
+            "acceptanceCriteria": [
+              "Environment variables are correctly configured for local development"
+            ],
+            "parentTaskId": "T2",
+            "generatedAt": "2025-03-24T08:20:07.228Z"
+          },
+          {
+            "id": "T2.5",
+            "title": "Install Tech Stack Dependencies",
+            "description": "Install all necessary dependencies specified by the chosen tech stack.",
+            "category": "DevOps",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Install Development Tools"
+            ],
+            "acceptanceCriteria": [
+              "All tech stack dependencies are correctly installed"
+            ],
+            "parentTaskId": "T2",
+            "generatedAt": "2025-03-24T08:20:07.228Z"
+          },
+          {
+            "id": "T2.6",
+            "title": "Configure Build and Test Systems (if applicable)",
+            "description": "Set up build and test systems according to the chosen tech stack for continuous integration and testing.",
+            "category": "DevOps",
+            "estimatedHours": 5,
+            "priority": "High",
+            "dependsOn": [
+              "Install Tech Stack Dependencies"
+            ],
+            "acceptanceCriteria": [
+              "Build and test systems are configured for continuous integration and testing"
+            ],
+            "parentTaskId": "T2",
+            "generatedAt": "2025-03-24T08:20:07.228Z"
+          },
+          {
+            "id": "T3.1",
+            "title": "Research and gather design inspiration",
+            "description": "Gather design inspiration from relevant sources to inform the project layout.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "A collection of design inspirations is available for reference."
+            ],
+            "parentTaskId": "T3",
+            "generatedAt": "2025-03-24T08:21:12.354Z"
+          },
+          {
+            "id": "T3.2",
+            "title": "Define project requirements and objectives",
+            "description": "Clarify the purpose, goals, and functional needs of the project layout.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Draft Project Scope Document"
+            ],
+            "acceptanceCriteria": [
+              "A clear set of design requirements and objectives is established."
+            ],
+            "parentTaskId": "T3",
+            "generatedAt": "2025-03-24T08:21:12.355Z"
+          },
+          {
+            "id": "T3.3",
+            "title": "Sketch initial wireframe ideas",
+            "description": "Generate rough sketches or wireframes to visualize potential project layouts.",
+            "category": "Design",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Define project requirements and objectives"
+            ],
+            "acceptanceCriteria": [
+              "A set of wireframe sketches is created to explore possible layouts."
+            ],
+            "parentTaskId": "T3",
+            "generatedAt": "2025-03-24T08:21:12.355Z"
+          },
+          {
+            "id": "T3.4",
+            "title": "Select preferred wireframe concept",
+            "description": "Choose the most promising wireframe sketch as a basis for further refinement.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Sketch initial wireframe ideas"
+            ],
+            "acceptanceCriteria": [
+              "The preferred wireframe concept is chosen and documented."
+            ],
+            "parentTaskId": "T3",
+            "generatedAt": "2025-03-24T08:21:12.355Z"
+          },
+          {
+            "id": "T3.5",
+            "title": "Refine wireframe with details",
+            "description": "Add details, such as UI components, typography, and color schemes to the selected wireframe.",
+            "category": "Design",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Select preferred wireframe concept"
+            ],
+            "acceptanceCriteria": [
+              "The refined wireframe includes necessary UI components, typography, and color schemes."
+            ],
+            "parentTaskId": "T3",
+            "generatedAt": "2025-03-24T08:21:12.355Z"
+          },
+          {
+            "id": "T3.6",
+            "title": "Create a high-fidelity mockup",
+            "description": "Transform the refined wireframe into a high-fidelity mockup, incorporating visual assets.",
+            "category": "Design",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Refine wireframe with details"
+            ],
+            "acceptanceCriteria": [
+              "A high-fidelity mockup of the project layout is created."
+            ],
+            "parentTaskId": "T3",
+            "generatedAt": "2025-03-24T08:21:12.355Z"
+          },
+          {
+            "id": "T4.1",
+            "title": "Analyze Design Layout for Frontend Components",
+            "description": "Study the approved design layout to understand the positioning, structure, and interaction points of each frontend component.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Design Project Layout"
+            ],
+            "acceptanceCriteria": [
+              "- The design layout is fully understood and documented."
+            ],
+            "parentTaskId": "T4",
+            "generatedAt": "2025-03-24T08:22:26.310Z"
+          },
+          {
+            "id": "T4.2",
+            "title": "Set Up Component Templates",
+            "description": "Create reusable templates for each frontend component using the chosen tech stack.",
+            "category": "Frontend",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Analyze Design Layout for Frontend Components"
+            ],
+            "acceptanceCriteria": [
+              "- Templates are created and saved."
+            ],
+            "parentTaskId": "T4",
+            "generatedAt": "2025-03-24T08:22:26.310Z"
+          },
+          {
+            "id": "T4.3",
+            "title": "Develop Basic Functionality of First Component",
+            "description": "Implement the basic functionality (e.g., click events, data fetching) for one frontend component using its corresponding template.",
+            "category": "Frontend",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Set Up Component Templates"
+            ],
+            "acceptanceCriteria": [
+              "- The basic functionality of the first frontend component is implemented.",
+              "- Functionality matches the design."
+            ],
+            "parentTaskId": "T4",
+            "generatedAt": "2025-03-24T08:22:26.310Z"
+          },
+          {
+            "id": "T4.4",
+            "title": "Implement Visuals for First Component",
+            "description": "Add the visual elements (e.g., colors, fonts, images) to the first frontend component according to the approved design.",
+            "category": "Frontend",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Develop Basic Functionality of First Component"
+            ],
+            "acceptanceCriteria": [
+              "- The visual elements are added to the first frontend component.",
+              "- Visuals match the design."
+            ],
+            "parentTaskId": "T4",
+            "generatedAt": "2025-03-24T08:22:26.310Z"
+          },
+          {
+            "id": "T4.5",
+            "title": "Test and Debug First Frontend Component",
+            "description": "Perform functional testing and debugging of the first frontend component to ensure it works as intended.",
+            "category": "Testing",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Implement Visuals for First Component"
+            ],
+            "acceptanceCriteria": [
+              "- The first frontend component functions correctly."
+            ],
+            "parentTaskId": "T4",
+            "generatedAt": "2025-03-24T08:22:26.310Z"
+          },
+          {
+            "id": "T4.6",
+            "title": "Replicate Remaining Components",
+            "description": "Apply the previously developed design patterns, functionality, and visuals to the rest of the frontend components.",
+            "category": "Frontend",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Test and Debug First Frontend Component"
+            ],
+            "acceptanceCriteria": [
+              "- All remaining frontend components are functional, visually consistent with the design.",
+              "- All necessary interactions and animations are correctly implemented."
+            ],
+            "parentTaskId": "T4",
+            "generatedAt": "2025-03-24T08:22:26.310Z"
+          },
+          {
+            "id": "T5.1",
+            "title": "Design API Endpoints",
+            "description": "Create a list of required API endpoints for the backend services and define their input/output parameters.",
+            "category": "Backend",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "API endpoints are defined with appropriate HTTP methods (GET, POST, PUT, DELETE)",
+              "Input/output parameters for each endpoint are clearly specified"
+            ],
+            "parentTaskId": "T5",
+            "generatedAt": "2025-03-24T08:23:27.192Z"
+          },
+          {
+            "id": "T5.2",
+            "title": "Create API Specifications",
+            "description": "Develop detailed specifications for the APIs, including request and response formats, authentication methods, and error handling.",
+            "category": "Backend",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Design API Endpoints"
+            ],
+            "acceptanceCriteria": [
+              "API specifications are complete and well-documented",
+              "Request and response formats are clearly defined"
+            ],
+            "parentTaskId": "T5",
+            "generatedAt": "2025-03-24T08:23:27.192Z"
+          },
+          {
+            "id": "T5.3",
+            "title": "Set Up Database Schema",
+            "description": "Create the database schema, defining tables, relationships, indices, and other necessary database structures.",
+            "category": "Backend",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Design API Endpoints"
+            ],
+            "acceptanceCriteria": [
+              "Database schema is designed and clearly documented",
+              "Tables, relationships, indices, and other necessary structures are created"
+            ],
+            "parentTaskId": "T5",
+            "generatedAt": "2025-03-24T08:23:27.192Z"
+          },
+          {
+            "id": "T5.4",
+            "title": "Implement Server-Side Logic",
+            "description": "Write the server-side logic for API endpoints, including business rules, validation, and error handling.",
+            "category": "Backend",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Create API Specifications",
+              "Set Up Database Schema"
+            ],
+            "acceptanceCriteria": [
+              "Server-side logic is implemented for all required APIs",
+              "Business rules, validation, and error handling are properly integrated"
+            ],
+            "parentTaskId": "T5",
+            "generatedAt": "2025-03-24T08:23:27.192Z"
+          },
+          {
+            "id": "T5.5",
+            "title": "Secure Backend Services",
+            "description": "Implement security measures such as authentication, authorization, and encryption to protect the backend services.",
+            "category": "Backend",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Implement Server-Side Logic"
+            ],
+            "acceptanceCriteria": [
+              "Authentication and authorization are implemented for all APIs",
+              "Data is encrypted when necessary"
+            ],
+            "parentTaskId": "T5",
+            "generatedAt": "2025-03-24T08:23:27.192Z"
+          },
+          {
+            "id": "T6.1",
+            "title": "Identify Critical Frontend Functionalities",
+            "description": "List all the critical functionalities that need to be tested for the frontend components.",
+            "category": "Testing",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "All critical functionalities should be identified."
+            ],
+            "parentTaskId": "T6",
+            "generatedAt": "2025-03-24T08:24:46.553Z"
+          },
+          {
+            "id": "T6.2",
+            "title": "Identify Critical Backend Functionalities",
+            "description": "List all the critical functionalities that need to be tested for the backend components.",
+            "category": "Testing",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "All critical functionalities should be identified."
+            ],
+            "parentTaskId": "T6",
+            "generatedAt": "2025-03-24T08:24:46.553Z"
+          },
+          {
+            "id": "T6.3",
+            "title": "Select Testing Framework for Frontend",
+            "description": "Research and choose a suitable testing framework for frontend automated tests.",
+            "category": "Testing",
+            "estimatedHours": 2,
+            "priority": "Medium",
+            "dependsOn": [
+              "Identify Critical Frontend Functionalities"
+            ],
+            "acceptanceCriteria": [
+              "A testing framework has been selected for the frontend."
+            ],
+            "parentTaskId": "T6",
+            "generatedAt": "2025-03-24T08:24:46.553Z"
+          },
+          {
+            "id": "T6.4",
+            "title": "Select Testing Framework for Backend",
+            "description": "Research and choose a suitable testing framework for backend automated tests.",
+            "category": "Testing",
+            "estimatedHours": 2,
+            "priority": "Medium",
+            "dependsOn": [
+              "Identify Critical Backend Functionalities"
+            ],
+            "acceptanceCriteria": [
+              "A testing framework has been selected for the backend."
+            ],
+            "parentTaskId": "T6",
+            "generatedAt": "2025-03-24T08:24:46.553Z"
+          },
+          {
+            "id": "T6.5",
+            "title": "Write Frontend Automated Test Cases",
+            "description": "Develop automated test cases for frontend components based on identified critical functionalities.",
+            "category": "Testing",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Select Testing Framework for Frontend",
+              "Identify Critical Frontend Functionalities"
+            ],
+            "acceptanceCriteria": [
+              "Test cases have been written for frontend components covering all identified critical functionalities."
+            ],
+            "parentTaskId": "T6",
+            "generatedAt": "2025-03-24T08:24:46.553Z"
+          },
+          {
+            "id": "T6.6",
+            "title": "Write Backend Automated Test Cases",
+            "description": "Develop automated test cases for backend components based on identified critical functionalities.",
+            "category": "Testing",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Select Testing Framework for Backend",
+              "Identify Critical Backend Functionalities"
+            ],
+            "acceptanceCriteria": [
+              "Test cases have been written for backend components covering all identified critical functionalities."
+            ],
+            "parentTaskId": "T6",
+            "generatedAt": "2025-03-24T08:24:46.553Z"
+          },
+          {
+            "id": "T6.7",
+            "title": "Validate Automated Tests",
+            "description": "Run tests to ensure they cover all critical functionalities and are efficient, reliable, and maintainable.",
+            "category": "Testing",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Write Frontend Automated Test Cases",
+              "Write Backend Automated Test Cases"
+            ],
+            "acceptanceCriteria": [
+              "All tests should pass and cover all critical functionalities.",
+              "Tests should be efficient, reliable, and maintainable."
+            ],
+            "parentTaskId": "T6",
+            "generatedAt": "2025-03-24T08:24:46.554Z"
+          },
+          {
+            "id": "T7.1",
+            "title": "Research and gather design inspiration for main pages",
+            "description": "Gather visual references, color palettes, typography choices, and layout ideas from existing successful designs in the industry. Document findings for easy access.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "- Research findings are well-documented and easily accessible.",
+              "- The research results provide a clear direction for the design."
+            ],
+            "parentTaskId": "T7",
+            "generatedAt": "2025-03-24T08:25:57.543Z"
+          },
+          {
+            "id": "T7.2",
+            "title": "Create low-fidelity wireframes for homepage",
+            "description": "Design simple, black-and-white sketches of the homepage that represent the layout and placement of key elements.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Research and gather design inspiration for main pages"
+            ],
+            "acceptanceCriteria": [
+              "- The wireframe is clearly labeled with key elements.",
+              "- The wireframe includes the necessary UI elements for the homepage."
+            ],
+            "parentTaskId": "T7",
+            "generatedAt": "2025-03-24T08:25:57.543Z"
+          },
+          {
+            "id": "T7.3",
+            "title": "Create low-fidelity wireframes for product page",
+            "description": "Design simple, black-and-white sketches of the product page that represent the layout and placement of key elements.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Research and gather design inspiration for main pages"
+            ],
+            "acceptanceCriteria": [
+              "- The wireframe is clearly labeled with key elements.",
+              "- The wireframe includes the necessary UI elements for the product page."
+            ],
+            "parentTaskId": "T7",
+            "generatedAt": "2025-03-24T08:25:57.544Z"
+          },
+          {
+            "id": "T7.4",
+            "title": "Create low-fidelity wireframes for checkout page",
+            "description": "Design simple, black-and-white sketches of the checkout page that represent the layout and placement of key elements.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Research and gather design inspiration for main pages"
+            ],
+            "acceptanceCriteria": [
+              "- The wireframe is clearly labeled with key elements.",
+              "- The wireframe includes the necessary UI elements for the checkout page."
+            ],
+            "parentTaskId": "T7",
+            "generatedAt": "2025-03-24T08:25:57.544Z"
+          },
+          {
+            "id": "T7.5",
+            "title": "Review and iterate on wireframes",
+            "description": "Gather feedback from stakeholders, make necessary adjustments to the wireframes, and validate that they meet the acceptance criteria.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Create low-fidelity wireframes for homepage",
+              "Create low-fidelity wireframes for product page",
+              "Create low-fidelity wireframes for checkout page"
+            ],
+            "acceptanceCriteria": [
+              "- Wireframes have been reviewed and iterated upon.",
+              "- The revised wireframes meet the acceptance criteria."
+            ],
+            "parentTaskId": "T7",
+            "generatedAt": "2025-03-24T08:25:57.544Z"
+          },
+          {
+            "id": "T8.1",
+            "title": "Gather Design Assets and Brand Guidelines",
+            "description": "Collect all necessary design assets, color schemes, typography, and branding elements to ensure mockups adhere to the established guidelines.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Task 1: Design Preliminary Wireframes"
+            ],
+            "acceptanceCriteria": [
+              "All design assets and branding elements are readily available and organized"
+            ],
+            "parentTaskId": "T8",
+            "generatedAt": "2025-03-24T08:26:45.745Z"
+          },
+          {
+            "id": "T8.2",
+            "title": "Refine Wireframe Elements for UI/UX",
+            "description": "Enhance wireframe components by adding interactive elements, hover states, and other UI/UX details.",
+            "category": "Design",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Gather Design Assets and Brand Guidelines"
+            ],
+            "acceptanceCriteria": [
+              "All wireframe elements are refined with basic UI/UX details"
+            ],
+            "parentTaskId": "T8",
+            "generatedAt": "2025-03-24T08:26:45.745Z"
+          },
+          {
+            "id": "T8.3",
+            "title": "Implement Visual Design Elements",
+            "description": "Apply visual design elements such as colors, typography, and images to the enhanced wireframes.",
+            "category": "Design",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Refine Wireframe Elements for UI/UX"
+            ],
+            "acceptanceCriteria": [
+              "Mockups now have visual design elements applied"
+            ],
+            "parentTaskId": "T8",
+            "generatedAt": "2025-03-24T08:26:45.745Z"
+          },
+          {
+            "id": "T8.4",
+            "title": "Review and Iterate Design Based on Feedback",
+            "description": "Gather feedback from stakeholders, iterate on the mockup designs as needed, and ensure that all UI/UX details are addressed.",
+            "category": "Design",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Implement Visual Design Elements"
+            ],
+            "acceptanceCriteria": [
+              "All feedback has been addressed and mockups have been iterated upon"
+            ],
+            "parentTaskId": "T8",
+            "generatedAt": "2025-03-24T08:26:45.745Z"
+          },
+          {
+            "id": "T9.1",
+            "title": "Analyze and Understand Mockups",
+            "description": "Study the provided mockups, noting key design elements and responsive behaviors.",
+            "category": "Frontend",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Task 2: Refine Wireframes into Mockups"
+            ],
+            "acceptanceCriteria": [
+              "Understand the design elements and responsive behaviors in the mockups."
+            ],
+            "parentTaskId": "T9",
+            "generatedAt": "2025-03-24T08:27:44.258Z"
+          },
+          {
+            "id": "T9.2",
+            "title": "Create HTML Structure for Components",
+            "description": "Draft the basic structure of each frontend component according to the analyzed mockups.",
+            "category": "Frontend",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Subtask: Analyze and Understand Mockups"
+            ],
+            "acceptanceCriteria": [
+              "Draft HTML structures for all components according to the mockups."
+            ],
+            "parentTaskId": "T9",
+            "generatedAt": "2025-03-24T08:27:44.258Z"
+          },
+          {
+            "id": "T9.3",
+            "title": "Implement CSS Styles for Components",
+            "description": "Apply CSS styles to the created HTML structure, ensuring responsiveness.",
+            "category": "Frontend",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Subtask: Create HTML Structure for Components"
+            ],
+            "acceptanceCriteria": [
+              "Apply CSS styles to all components and ensure responsiveness."
+            ],
+            "parentTaskId": "T9",
+            "generatedAt": "2025-03-24T08:27:44.258Z"
+          },
+          {
+            "id": "T9.4",
+            "title": "Test Accessibility of Components",
+            "description": "Check each component's accessibility using tools such as WAVE or Lighthouse.",
+            "category": "Frontend",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Subtask: Implement CSS Styles for Components"
+            ],
+            "acceptanceCriteria": [
+              "Test and ensure all components are accessible."
+            ],
+            "parentTaskId": "T9",
+            "generatedAt": "2025-03-24T08:27:44.258Z"
+          },
+          {
+            "id": "T9.5",
+            "title": "Review and Refine Components",
+            "description": "Review the completed components, addressing any issues or inconsistencies.",
+            "category": "Frontend",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Subtask: Test Accessibility of Components"
+            ],
+            "acceptanceCriteria": [
+              "Review and refine the frontend components as needed."
+            ],
+            "parentTaskId": "T9",
+            "generatedAt": "2025-03-24T08:27:44.258Z"
+          },
+          {
+            "id": "T10.1",
+            "title": "Define API endpoints for product functionality",
+            "description": "List and describe the required API endpoints for retrieving product details, handling add to cart functionality.",
+            "category": "Backend",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "- API endpoints should be defined and documented."
+            ],
+            "parentTaskId": "T10",
+            "generatedAt": "2025-03-24T08:28:47.207Z"
+          },
+          {
+            "id": "T10.2",
+            "title": "Create basic CRUD operations for product data",
+            "description": "Implement Create, Read, Update, and Delete (CRUD) operations for managing product data in the backend.",
+            "category": "Backend",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Define API endpoints for product functionality"
+            ],
+            "acceptanceCriteria": [
+              "- Basic CRUD operations should be implemented and working as expected."
+            ],
+            "parentTaskId": "T10",
+            "generatedAt": "2025-03-24T08:28:47.208Z"
+          },
+          {
+            "id": "T10.3",
+            "title": "Implement retrieving product details endpoint",
+            "description": "Develop the API endpoint to fetch product details by ID.",
+            "category": "Backend",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Create basic CRUD operations for product data"
+            ],
+            "acceptanceCriteria": [
+              "- The API endpoint should return the correct product details when called with a valid ID.",
+              "- The API endpoint should handle errors for invalid IDs."
+            ],
+            "parentTaskId": "T10",
+            "generatedAt": "2025-03-24T08:28:47.208Z"
+          },
+          {
+            "id": "T10.4",
+            "title": "Implement add to cart functionality",
+            "description": "Develop the API endpoint for adding products to the user's cart.",
+            "category": "Backend",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Create basic CRUD operations for product data"
+            ],
+            "acceptanceCriteria": [
+              "- The API endpoint should accept a product ID and a user ID.",
+              "- The API endpoint should add the product to the user's cart.",
+              "- The API endpoint should handle errors for invalid IDs or full cart capacities."
+            ],
+            "parentTaskId": "T10",
+            "generatedAt": "2025-03-24T08:28:47.208Z"
+          },
+          {
+            "id": "T10.5",
+            "title": "Write unit tests for product-related endpoints",
+            "description": "Develop and run unit tests to ensure the correctness of implemented API endpoints.",
+            "category": "Testing",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Implement retrieving product details endpoint",
+              "Implement add to cart functionality"
+            ],
+            "acceptanceCriteria": [
+              "- All unit tests should pass.",
+              "- The API endpoints should be tested for edge cases and errors."
+            ],
+            "parentTaskId": "T10",
+            "generatedAt": "2025-03-24T08:28:47.208Z"
+          },
+          {
+            "id": "T11.1",
+            "title": "Connect Frontend to Backend API (Setup)",
+            "description": "Configure the frontend to communicate with the backend API, including setting up appropriate endpoints.",
+            "category": "Frontend",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Task 4: Implement Backend API for Product Functionality"
+            ],
+            "acceptanceCriteria": [
+              "Successful connection to the backend API established"
+            ],
+            "parentTaskId": "T11",
+            "generatedAt": "2025-03-24T08:29:46.963Z"
+          },
+          {
+            "id": "T11.2",
+            "title": "Fetch Data from Backend API",
+            "description": "Implement fetching data from the backend API and display it on the frontend.",
+            "category": "Frontend",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Subtask 1: Connect Frontend to Backend API (Setup)"
+            ],
+            "acceptanceCriteria": [
+              "Data fetched from the backend and displayed on the frontend"
+            ],
+            "parentTaskId": "T11",
+            "generatedAt": "2025-03-24T08:29:46.963Z"
+          },
+          {
+            "id": "T11.3",
+            "title": "Test Data Fetching",
+            "description": "Perform unit tests to ensure data fetching works as expected.",
+            "category": "Testing",
+            "estimatedHours": 1,
+            "priority": "High",
+            "dependsOn": [
+              "Subtask 2: Fetch Data from Backend API"
+            ],
+            "acceptanceCriteria": [
+              "Tests pass for data fetching"
+            ],
+            "parentTaskId": "T11",
+            "generatedAt": "2025-03-24T08:29:46.963Z"
+          },
+          {
+            "id": "T11.4",
+            "title": "Implement Interactions with the Backend API",
+            "description": "Add functionality to interact with the backend API (e.g., add to cart), ensuring proper data flow.",
+            "category": "Frontend",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Subtask 2: Fetch Data from Backend API"
+            ],
+            "acceptanceCriteria": [
+              "Interactions with the backend API work as expected"
+            ],
+            "parentTaskId": "T11",
+            "generatedAt": "2025-03-24T08:29:46.963Z"
+          },
+          {
+            "id": "T11.5",
+            "title": "Test Interaction with the Backend API",
+            "description": "Perform unit tests to ensure interactions with the backend API work as expected.",
+            "category": "Testing",
+            "estimatedHours": 1,
+            "priority": "High",
+            "dependsOn": [
+              "Subtask 4: Implement Interactions with the Backend API"
+            ],
+            "acceptanceCriteria": [
+              "Tests pass for interactions with the backend API"
+            ],
+            "parentTaskId": "T11",
+            "generatedAt": "2025-03-24T08:29:46.963Z"
+          },
+          {
+            "id": "T12.1",
+            "title": "Verify Frontend Components Functionality",
+            "description": "Check the functionality of each frontend component integrated with the backend API",
+            "category": "Testing",
+            "estimatedHours": 3,
+            "priority": "Medium",
+            "dependsOn": [
+              "Task 5"
+            ],
+            "acceptanceCriteria": [
+              "- Each frontend component should function as expected.",
+              "- Any malfunctions or bugs should be logged."
+            ],
+            "parentTaskId": "T12",
+            "generatedAt": "2025-03-24T08:30:49.905Z"
+          },
+          {
+            "id": "T12.2",
+            "title": "Perform Usability Testing",
+            "description": "Evaluate the user-friendliness and accessibility of implemented features",
+            "category": "Testing",
+            "estimatedHours": 3,
+            "priority": "Medium",
+            "dependsOn": [
+              "Task 5"
+            ],
+            "acceptanceCriteria": [
+              "- The implemented features should be easy to use and navigate.",
+              "- Potential usability issues or accessibility concerns should be reported."
+            ],
+            "parentTaskId": "T12",
+            "generatedAt": "2025-03-24T08:30:49.906Z"
+          },
+          {
+            "id": "T12.3",
+            "title": "Measure Feature Performance",
+            "description": "Test the speed, responsiveness, and resource consumption of implemented features",
+            "category": "Testing",
+            "estimatedHours": 3,
+            "priority": "Medium",
+            "dependsOn": [
+              "Task 5"
+            ],
+            "acceptanceCriteria": [
+              "- Implemented features should perform efficiently with acceptable speed and resource usage.",
+              "- Performance bottlenecks or slowdowns should be identified and reported."
+            ],
+            "parentTaskId": "T12",
+            "generatedAt": "2025-03-24T08:30:49.906Z"
+          },
+          {
+            "id": "T12.4",
+            "title": "Document Test Cases",
+            "description": "Create detailed test cases for each implemented feature based on functional, usability, and performance requirements",
+            "category": "Documentation",
+            "estimatedHours": 2,
+            "priority": "Low",
+            "dependsOn": [
+              "Task 5"
+            ],
+            "acceptanceCriteria": [
+              "- Test cases should cover all aspects of the implemented features.",
+              "- Test cases should be clear, concise, and reproducible."
+            ],
+            "parentTaskId": "T12",
+            "generatedAt": "2025-03-24T08:30:49.906Z"
+          },
+          {
+            "id": "T12.5",
+            "title": "Report Findings",
+            "description": "Compile and report any issues or problems discovered during functional testing",
+            "category": "Testing",
+            "estimatedHours": 4,
+            "priority": "Medium",
+            "dependsOn": [
+              "Task 5",
+              "Verify Frontend Components Functionality",
+              "Perform Usability Testing",
+              "Measure Feature Performance"
+            ],
+            "acceptanceCriteria": [
+              "- Any issues or problems should be documented in a clear and concise manner.",
+              "- The report should include steps to reproduce the issue, expected behavior, and actual observed behavior."
+            ],
+            "parentTaskId": "T12",
+            "generatedAt": "2025-03-24T08:30:49.906Z"
+          },
+          {
+            "id": "T13.1",
+            "title": "Analyze the code structure",
+            "description": "Review the overall structure of the codebase and identify key sections that require documentation.",
+            "category": "Documentation",
+            "estimatedHours": 2,
+            "priority": "Low",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "The main sections of the codebase are identified."
+            ],
+            "parentTaskId": "T13",
+            "generatedAt": "2025-03-24T08:31:33.729Z"
+          },
+          {
+            "id": "T13.2",
+            "title": "Write header comments for modules and functions",
+            "description": "Add clear and concise comments at the top of each module and function explaining its purpose, inputs, outputs, and any important assumptions or dependencies.",
+            "category": "Documentation",
+            "estimatedHours": 3,
+            "priority": "Low",
+            "dependsOn": [
+              "Analyze the code structure"
+            ],
+            "acceptanceCriteria": [
+              "All modules and functions have appropriate header comments."
+            ],
+            "parentTaskId": "T13",
+            "generatedAt": "2025-03-24T08:31:33.729Z"
+          },
+          {
+            "id": "T13.3",
+            "title": "Create README files for key projects",
+            "description": "Write a clear and concise README file for each project, explaining its purpose, dependencies, installation instructions, and usage.",
+            "category": "Documentation",
+            "estimatedHours": 3,
+            "priority": "Low",
+            "dependsOn": [
+              "Analyze the code structure"
+            ],
+            "acceptanceCriteria": [
+              "Each project has a comprehensive README file."
+            ],
+            "parentTaskId": "T13",
+            "generatedAt": "2025-03-24T08:31:33.729Z"
+          },
+          {
+            "id": "T13.4",
+            "title": "Write in-line comments for complex logic",
+            "description": "Add inline comments to explain any complex or non-obvious logic within the code.",
+            "category": "Documentation",
+            "estimatedHours": 2,
+            "priority": "Low",
+            "dependsOn": [
+              "Analyze the code structure"
+            ],
+            "acceptanceCriteria": [
+              "All complex logic has appropriate inline comments."
+            ],
+            "parentTaskId": "T13",
+            "generatedAt": "2025-03-24T08:31:33.729Z"
+          }
+        ],
+        "risks": [
+          {
+            "category": "Resource",
+            "title": "Deliverables",
+            "description": "The small team size and potential underutilization of resources could result in delays or missed deadlines.",
+            "mitigation": "Implement Agile practices to adapt to changing priorities, monitor progress closely, and adjust the plan as needed.",
+            "impact": "Medium",
+            "probability": "Medium",
+            "source": "ResourceAnalysisAgent"
+          },
+          {
+            "category": "Skill Gap",
+            "title": "Backend Development",
+            "description": "The team lacks a member with expertise in backend development, which may cause delays or require external assistance.",
+            "mitigation": "Consider hiring a temporary contractor or training one of the existing team members to handle backend tasks.",
+            "impact": "Medium",
+            "probability": "High",
+            "source": "ResourceAnalysisAgent"
+          },
+          {
+            "category": "Skill Gap",
+            "title": "Full-stack Development",
+            "description": "With no full-stack developer on the team, coordinating tasks and ensuring smooth handoff between frontend and backend may be challenging.",
+            "mitigation": "Cross-train team members to cover both frontend and backend development or consider hiring a full-stack developer.",
+            "impact": "Medium",
+            "probability": "High",
+            "source": "ResourceAnalysisAgent"
+          }
+        ],
+        "timeline": {
+          "milestones": [
+            {
+              "date": "TBD",
+              "title": "Draft Project Scope Document",
+              "description": "Create and draft project scope document, including objectives, key deliverables, timeline, and team capacity.",
+              "type": "task_completion",
+              "relatedId": "T1"
+            },
+            {
+              "date": "TBD",
+              "title": "Set Up Development Environment",
+              "description": "Configure and set up the development environment for the project based on the chosen tech stack.",
+              "type": "task_completion",
+              "relatedId": "T2"
+            },
+            {
+              "date": "TBD",
+              "title": "Design Project Layout",
+              "description": "Create a wireframe or mockup of the project layout, including user interface design.",
+              "type": "task_completion",
+              "relatedId": "T3"
+            },
+            {
+              "date": "TBD",
+              "title": "Implement Frontend Components",
+              "description": "Develop frontend components based on the approved design, ensuring compatibility with the chosen tech stack.",
+              "type": "task_completion",
+              "relatedId": "T4"
+            },
+            {
+              "date": "TBD",
+              "title": "Set Up Backend Services",
+              "description": "Create and configure backend services, including APIs, databases, and server-side logic.",
+              "type": "task_completion",
+              "relatedId": "T5"
+            },
+            {
+              "date": "TBD",
+              "title": "Write Automated Tests",
+              "description": "Develop automated tests for the frontend and backend components to ensure their functionality and compatibility.",
+              "type": "task_completion",
+              "relatedId": "T6"
+            },
+            {
+              "date": "TBD",
+              "title": "Design Preliminary Wireframes",
+              "description": "Create wireframes for the main pages, including homepage, product page, and checkout page.",
+              "type": "task_completion",
+              "relatedId": "T7"
+            },
+            {
+              "date": "TBD",
+              "title": "Refine Wireframes into Mockups",
+              "description": "Convert wireframes into high-fidelity mockups, including UI/UX details and visual design.",
+              "type": "task_completion",
+              "relatedId": "T8"
+            },
+            {
+              "date": "TBD",
+              "title": "Create Frontend Components Based on Mockups",
+              "description": "Develop frontend components based on the provided mockups, ensuring they are responsive and accessible.",
+              "type": "task_completion",
+              "relatedId": "T9"
+            },
+            {
+              "date": "TBD",
+              "title": "Implement Backend API for Product Functionality",
+              "description": "Develop the backend API for product-related functionality, such as retrieving product details and handling add to cart.",
+              "type": "task_completion",
+              "relatedId": "T10"
+            },
+            {
+              "date": "TBD",
+              "title": "Integrate Frontend Components with Backend API",
+              "description": "Connect the frontend components to the backend API, ensuring proper data flow between client and server.",
+              "type": "task_completion",
+              "relatedId": "T11"
+            }
+          ],
+          "events": [
+            {
+              "date": "TBD",
+              "type": "sprint_start",
+              "title": "Sprint 1 Start",
+              "description": "Beginning of Sprint 1",
+              "relatedId": "Sprint 1"
+            },
+            {
+              "date": "TBD",
+              "type": "sprint_end",
+              "title": "Sprint 1 End",
+              "description": "End of Sprint 1",
+              "relatedId": "Sprint 1"
+            },
+            {
+              "date": "TBD",
+              "type": "sprint_start",
+              "title": "Sprint 2 Start",
+              "description": "Beginning of Sprint 2",
+              "relatedId": "Sprint 2"
+            },
+            {
+              "date": "TBD",
+              "type": "sprint_end",
+              "title": "Sprint 2 End",
+              "description": "End of Sprint 2",
+              "relatedId": "Sprint 2"
+            }
+          ],
+          "startDate": "TBD",
+          "endDate": "TBD"
+        },
+        "resourceAllocation": {
+          "teamUtilization": {
+            "averageUtilization": 21,
+            "overallocatedSprints": 0,
+            "totalSprints": 2
+          },
+          "memberAllocation": [
+            {
+              "name": "Jordan",
+              "taskCount": 1,
+              "estimatedWorkload": "Low"
+            },
+            {
+              "name": "Alex",
+              "taskCount": 2,
+              "estimatedWorkload": "Low"
+            },
+            {
+              "name": "Taylor",
+              "taskCount": 2,
+              "estimatedWorkload": "Low"
+            }
+          ],
+          "hasResourceRisks": false,
+          "recommendations": [
+            {
+              "type": "confirmation",
+              "description": "All sprints appear to have adequate resources. No adjustments needed."
+            }
+          ]
+        },
+        "metadata": {
+          "generatedAt": "2025-03-24T08:31:33.755Z",
+          "generatorVersion": "1.0.0",
+          "agentVersion": "2.0.0"
+        }
+      }
+    },
+    {
+      "runId": "run_1742806629583",
+      "timestamp": "2025-03-24T08:57:09.583Z",
+      "testName": "Basic Project Plan",
+      "projectName": "E-commerce Mobile App",
+      "plan": {
+        "project": {
+          "name": "E-commerce Mobile App",
+          "type": "Mobile Application",
+          "description": "A full-featured e-commerce mobile app with user authentication, product browsing, shopping cart, checkout, and order tracking.",
+          "timeline": "3 months",
+          "priority": "High",
+          "techStack": [
+            "React Native",
+            "Firebase",
+            "Node.js",
+            "Express",
+            "MongoDB"
+          ],
+          "teamMembers": [
+            {
+              "id": "tm1",
+              "name": "Alex",
+              "roles": [
+                null
+              ],
+              "experience": "3 years",
+              "skills": [
+                "React Native",
+                "JavaScript",
+                "Mobile Development"
+              ],
+              "availability": 40
+            },
+            {
+              "id": "tm2",
+              "name": "Taylor",
+              "roles": [
+                null
+              ],
+              "experience": "4 years",
+              "skills": [
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "Firebase"
+              ],
+              "availability": 40
+            },
+            {
+              "id": "tm3",
+              "name": "Jordan",
+              "roles": [
+                null
+              ],
+              "experience": "2 years",
+              "skills": [
+                "UI Design",
+                "UX Research",
+                "Frontend",
+                "CSS"
+              ],
+              "availability": 35
+            }
+          ],
+          "title": "E-commerce Mobile App",
+          "phases": [],
+          "objectives": [],
+          "constraints": [],
+          "assumptions": [],
+          "successCriteria": []
+        },
+        "sprints": [
+          {
+            "id": "Sprint 1",
+            "name": "Sprint 1",
+            "goal": "Sprint 1 execution",
+            "startDate": "Each sprint should have a clear goal",
+            "endDate": "key",
+            "keyDeliverables": [
+              "\": [\"Wireframes\", \"Mockups\"],",
+              "\""
+            ],
+            "objectives": [],
+            "mainPhases": [],
+            "estimatedVelocity": 0,
+            "resourceUtilization": 21,
+            "isOverallocated": false,
+            "estimatedEffort": 32
+          }
+        ],
+        "tasks": [
+          {
+            "id": "T1",
+            "title": "Define User Personas and User Stories",
+            "description": "Research and document user personas, their needs, goals, and pain points. Create a set of user stories that outline the functional requirements for the app.",
+            "category": "UX Research|Documentation",
+            "estimatedHours": 16,
+            "priority": "Critical",
+            "assigneeRole": "Jordan",
+            "dependencies": [],
+            "acceptanceCriteria": [
+              "User personas are clearly defined and documented.",
+              "User stories cover all essential user scenarios."
+            ],
+            "generatedAt": "2025-03-24T08:42:26.378Z",
+            "sprintId": "Sprint 1",
+            "sprintName": "Sprint 1",
+            "sprintStartDate": "Each sprint should have a clear goal",
+            "sprintEndDate": "key",
+            "assignedTo": "Jordan",
+            "subtaskCount": 6,
+            "subtaskIds": [
+              "T1.1",
+              "T1.2",
+              "T1.3",
+              "T1.4",
+              "T1.5",
+              "T1.6"
+            ]
+          },
+          {
+            "id": "T2",
+            "title": "Design Wireframes for the Home Screen",
+            "description": "Create wireframes for the home screen of the app, focusing on layout, navigation, and main features.",
+            "category": "Design",
+            "estimatedHours": 8,
+            "priority": "Low",
+            "assigneeRole": "Jordan",
+            "dependencies": [
+              "Task 1"
+            ],
+            "acceptanceCriteria": [
+              "Wireframes are well-structured and visually appealing.",
+              "Wireframes effectively convey the intended user experience."
+            ],
+            "generatedAt": "2025-03-24T08:42:26.379Z",
+            "sprintId": "Sprint 1",
+            "sprintName": "Sprint 1",
+            "sprintStartDate": "Each sprint should have a clear goal",
+            "sprintEndDate": "key",
+            "assignedTo": "Alex",
+            "subtaskCount": 5,
+            "subtaskIds": [
+              "T2.1",
+              "T2.2",
+              "T2.3",
+              "T2.4",
+              "T2.5"
+            ]
+          },
+          {
+            "id": "T3",
+            "title": "Create Mockups for the Home Screen",
+            "description": "Refine the wireframes into high-fidelity mockups, adding colors, fonts, and interactive elements.",
+            "category": "Design",
+            "estimatedHours": 12,
+            "priority": "Low",
+            "assigneeRole": "Jordan",
+            "dependencies": [
+              "Task 2"
+            ],
+            "acceptanceCriteria": [
+              "Mockups are polished and closely resemble the final product.",
+              "Mockups effectively convey the intended user experience."
+            ],
+            "generatedAt": "2025-03-24T08:42:26.379Z",
+            "sprintId": "Sprint 1",
+            "sprintName": "Sprint 1",
+            "sprintStartDate": "Each sprint should have a clear goal",
+            "sprintEndDate": "key",
+            "assignedTo": "Jordan",
+            "subtaskCount": 5,
+            "subtaskIds": [
+              "T3.1",
+              "T3.2",
+              "T3.3",
+              "T3.4",
+              "T3.5"
+            ]
+          },
+          {
+            "id": "T4",
+            "title": "Set Up Firebase Backend for User Authentication",
+            "description": "Configure Firebase for user authentication, including email and password registration, login, and password recovery.",
+            "category": "Backend",
+            "estimatedHours": 12,
+            "priority": "Low",
+            "assigneeRole": "Taylor",
+            "dependencies": [],
+            "acceptanceCriteria": [
+              "Firebase is set up and configured for user authentication.",
+              "User registration, login, and password recovery functionalities are implemented."
+            ],
+            "generatedAt": "2025-03-24T08:42:26.379Z",
+            "sprintId": "Sprint 1",
+            "sprintName": "Sprint 1",
+            "sprintStartDate": "Each sprint should have a clear goal",
+            "sprintEndDate": "key",
+            "assignedTo": "Taylor",
+            "subtaskCount": 6,
+            "subtaskIds": [
+              "T4.1",
+              "T4.2",
+              "T4.3",
+              "T4.4",
+              "T4.5",
+              "T4.6"
+            ]
+          },
+          {
+            "id": "T5",
+            "title": "Develop Home Screen Component in React Native",
+            "description": "Implement the home screen component using React Native, adhering to the provided mockups.",
+            "category": "Frontend",
+            "estimatedHours": 16,
+            "priority": "Low",
+            "assigneeRole": "Alex",
+            "dependencies": [
+              "Task 3"
+            ],
+            "acceptanceCriteria": [
+              "Home screen component is implemented according to the mockups.",
+              "Component is functional and responsive."
+            ],
+            "generatedAt": "2025-03-24T08:42:26.379Z",
+            "sprintId": "Sprint 1",
+            "sprintName": "Sprint 1",
+            "sprintStartDate": "Each sprint should have a clear goal",
+            "sprintEndDate": "key",
+            "assignedTo": "Jordan",
+            "subtaskCount": 7,
+            "subtaskIds": [
+              "T5.1",
+              "T5.2",
+              "T5.3",
+              "T5.4",
+              "T5.5",
+              "T5.6",
+              "T5.7"
+            ]
+          },
+          {
+            "id": "T6",
+            "title": "Write Unit Tests for Home Screen Component",
+            "description": "Write unit tests for the home screen component, ensuring it behaves as expected under various conditions.",
+            "category": "Testing",
+            "estimatedHours": 8,
+            "priority": "Low",
+            "assigneeRole": "Alex",
+            "dependencies": [
+              "Task 4"
+            ],
+            "acceptanceCriteria": [
+              "Unit tests are written for the home screen component.",
+              "Tests cover all essential scenarios and edge cases."
+            ],
+            "generatedAt": "2025-03-24T08:42:26.379Z",
+            "sprintId": "Sprint 1",
+            "sprintName": "Sprint 1",
+            "sprintStartDate": "Each sprint should have a clear goal",
+            "sprintEndDate": "key",
+            "assignedTo": "Alex",
+            "subtaskCount": 5,
+            "subtaskIds": [
+              "T6.1",
+              "T6.2",
+              "T6.3",
+              "T6.4",
+              "T6.5"
+            ]
+          },
+          {
+            "id": "T7",
+            "title": "Review and Provide Feedback on Designs",
+            "description": "Review the designs, provide feedback to the design team, and discuss any necessary changes.",
+            "category": "Design|Documentation",
+            "estimatedHours": 8,
+            "priority": "Low",
+            "assigneeRole": "Team (Collaborative)",
+            "dependencies": [
+              "Task 2"
+            ],
+            "acceptanceCriteria": [
+              "All team members have reviewed and provided constructive feedback on the designs.",
+              "Design changes are agreed upon and documented."
+            ],
+            "generatedAt": "2025-03-24T08:42:26.379Z",
+            "sprintId": "Sprint 1",
+            "sprintName": "Sprint 1",
+            "sprintStartDate": "Each sprint should have a clear goal",
+            "sprintEndDate": "key",
+            "assignedTo": "Taylor",
+            "subtaskCount": 5,
+            "subtaskIds": [
+              "T7.1",
+              "T7.2",
+              "T7.3",
+              "T7.4",
+              "T7.5"
+            ]
+          }
+        ],
+        "subtasks": [
+          {
+            "id": "T1.1",
+            "title": "Research and document user demographics",
+            "description": "Gather and document information about user demographics such as age, gender, occupation, income level, education level, location, etc.",
+            "category": "UX Research|Documentation",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "User demographics are clearly documented"
+            ],
+            "parentTaskId": "T1",
+            "generatedAt": "2025-03-24T08:43:33.247Z"
+          },
+          {
+            "id": "T1.2",
+            "title": "Identify user goals and needs",
+            "description": "List the primary goals and needs of each user persona based on their demographic information and potential use cases for the app",
+            "category": "UX Research|Documentation",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Research and document user demographics"
+            ],
+            "acceptanceCriteria": [
+              "User goals and needs are clearly defined for each persona"
+            ],
+            "parentTaskId": "T1",
+            "generatedAt": "2025-03-24T08:43:33.247Z"
+          },
+          {
+            "id": "T1.3",
+            "title": "Document user pain points",
+            "description": "Identify and document the common pain points that users may experience when trying to achieve their goals with the app or in related scenarios",
+            "category": "UX Research|Documentation",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Identify user goals and needs"
+            ],
+            "acceptanceCriteria": [
+              "User pain points are clearly documented"
+            ],
+            "parentTaskId": "T1",
+            "generatedAt": "2025-03-24T08:43:33.247Z"
+          },
+          {
+            "id": "T1.4",
+            "title": "Create user persona profiles",
+            "description": "Combine the demographics, goals, needs, and pain points to create a comprehensive profile for each user persona",
+            "category": "UX Research|Documentation",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Research and document user demographics",
+              "Identify user goals and needs",
+              "Document user pain points"
+            ],
+            "acceptanceCriteria": [
+              "User persona profiles are clearly defined"
+            ],
+            "parentTaskId": "T1",
+            "generatedAt": "2025-03-24T08:43:33.247Z"
+          },
+          {
+            "id": "T1.5",
+            "title": "Analyze app functional requirements",
+            "description": "Study the app's purpose, features, and capabilities to identify the essential scenarios that each user persona will encounter",
+            "category": "UX Research|Design",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Create user persona profiles"
+            ],
+            "acceptanceCriteria": [
+              "Essential app functional requirements for each user scenario are identified"
+            ],
+            "parentTaskId": "T1",
+            "generatedAt": "2025-03-24T08:43:33.247Z"
+          },
+          {
+            "id": "T1.6",
+            "title": "Write user stories",
+            "description": "Craft user stories that outline the functional requirements for the app from the perspective of each user persona and their essential scenarios",
+            "category": "UX Research|Documentation",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Analyze app functional requirements"
+            ],
+            "acceptanceCriteria": [
+              "User stories are clearly defined for all essential user scenarios"
+            ],
+            "parentTaskId": "T1",
+            "generatedAt": "2025-03-24T08:43:33.247Z"
+          },
+          {
+            "id": "T2.1",
+            "title": "Research and gather inspiration for home screen design",
+            "description": "Gather visual references from similar apps, analyze their layouts, navigation, and main features to inform the design of our app's home screen.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "Research materials are well-organized and relevant"
+            ],
+            "parentTaskId": "T2",
+            "generatedAt": "2025-03-24T08:44:34.150Z"
+          },
+          {
+            "id": "T2.2",
+            "title": "Sketch rough wireframe layout ideas",
+            "description": "Create multiple rough sketches of possible home screen layouts, considering navigation and main features.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Research and gather inspiration for home screen design"
+            ],
+            "acceptanceCriteria": [
+              "Rough sketches are visually appealing and represent multiple ideas"
+            ],
+            "parentTaskId": "T2",
+            "generatedAt": "2025-03-24T08:44:34.151Z"
+          },
+          {
+            "id": "T2.3",
+            "title": "Select the best layout idea and refine it",
+            "description": "Choose one of the rough sketches as the best option, then refine and clean up that design to create a polished wireframe.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Sketch rough wireframe layout ideas"
+            ],
+            "acceptanceCriteria": [
+              "Refined wireframe is well-structured and visually appealing"
+            ],
+            "parentTaskId": "T2",
+            "generatedAt": "2025-03-24T08:44:34.151Z"
+          },
+          {
+            "id": "T2.4",
+            "title": "Add navigation elements to the wireframe",
+            "description": "Include navigation components in the wireframe, such as menus, buttons, and links, ensuring that they are easily accessible.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Select the best layout idea and refine it"
+            ],
+            "acceptanceCriteria": [
+              "Navigation elements are properly integrated into the wireframe"
+            ],
+            "parentTaskId": "T2",
+            "generatedAt": "2025-03-24T08:44:34.151Z"
+          },
+          {
+            "id": "T2.5",
+            "title": "Integrate main features into the wireframe",
+            "description": "Add key features of the app to the wireframe, considering their placement and functionality.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Add navigation elements to the wireframe"
+            ],
+            "acceptanceCriteria": [
+              "Main features are properly represented in the wireframe"
+            ],
+            "parentTaskId": "T2",
+            "generatedAt": "2025-03-24T08:44:34.151Z"
+          },
+          {
+            "id": "T3.1",
+            "title": "Refine Low-Fidelity Wireframes",
+            "description": "Convert existing low-fidelity wireframes into high-fidelity ones, maintaining the original layout and structure.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "Wireframes are revised with improved detail"
+            ],
+            "parentTaskId": "T3",
+            "generatedAt": "2025-03-24T08:45:25.146Z"
+          },
+          {
+            "id": "T3.2",
+            "title": "Select Colors and Fonts",
+            "description": "Choose appropriate colors and fonts that align with the brand guidelines.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Refine Low-Fidelity Wireframes"
+            ],
+            "acceptanceCriteria": [
+              "Colors and fonts are selected and documented"
+            ],
+            "parentTaskId": "T3",
+            "generatedAt": "2025-03-24T08:45:25.146Z"
+          },
+          {
+            "id": "T3.3",
+            "title": "Add Basic Interactive Elements",
+            "description": "Include basic interactive elements such as buttons, dropdowns, and sliders.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Select Colors and Fonts"
+            ],
+            "acceptanceCriteria": [
+              "Interactive elements are added to the mockups"
+            ],
+            "parentTaskId": "T3",
+            "generatedAt": "2025-03-24T08:45:25.146Z"
+          },
+          {
+            "id": "T3.4",
+            "title": "Review and Iterate on Mockups",
+            "description": "Gather feedback from stakeholders and iterate on the mockups as needed.",
+            "category": "Design",
+            "estimatedHours": 3,
+            "priority": "High",
+            "dependsOn": [
+              "Add Basic Interactive Elements"
+            ],
+            "acceptanceCriteria": [
+              "Mockups are polished and reflect feedback from stakeholders"
+            ],
+            "parentTaskId": "T3",
+            "generatedAt": "2025-03-24T08:45:25.146Z"
+          },
+          {
+            "id": "T3.5",
+            "title": "Document User Flows",
+            "description": "Create a detailed document outlining the user flows within the home screen.",
+            "category": "Documentation",
+            "estimatedHours": 3,
+            "priority": "Medium",
+            "dependsOn": [
+              "Review and Iterate on Mockups"
+            ],
+            "acceptanceCriteria": [
+              "User flows are documented clearly"
+            ],
+            "parentTaskId": "T3",
+            "generatedAt": "2025-03-24T08:45:25.146Z"
+          },
+          {
+            "id": "T4.1",
+            "title": "Install and Initialize Firebase Project",
+            "description": "Set up a new Firebase project, install necessary Firebase tools, and initialize the Firebase SDK for user authentication.",
+            "category": "Backend",
+            "estimatedHours": 2,
+            "priority": "Medium",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "- Firebase project is created",
+              "- Necessary tools are installed and configured"
+            ],
+            "parentTaskId": "T4",
+            "generatedAt": "2025-03-24T08:46:41.059Z"
+          },
+          {
+            "id": "T4.2",
+            "title": "Configure Firebase Authentication for Email and Password",
+            "description": "Set up email/password provider in the Firebase console, and configure rules for authentication.",
+            "category": "Backend",
+            "estimatedHours": 3,
+            "priority": "Medium",
+            "dependsOn": [
+              "Install and Initialize Firebase Project"
+            ],
+            "acceptanceCriteria": [
+              "- Email/password provider is enabled",
+              "- Authentication rules are set up"
+            ],
+            "parentTaskId": "T4",
+            "generatedAt": "2025-03-24T08:46:41.059Z"
+          },
+          {
+            "id": "T4.3",
+            "title": "Implement User Registration Functionality",
+            "description": "Create a new user account using email and password, and handle registration errors.",
+            "category": "Backend",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Configure Firebase Authentication for Email and Password"
+            ],
+            "acceptanceCriteria": [
+              "- User can register with email and password"
+            ],
+            "parentTaskId": "T4",
+            "generatedAt": "2025-03-24T08:46:41.059Z"
+          },
+          {
+            "id": "T4.4",
+            "title": "Implement Login Functionality",
+            "description": "Allow users to log in using their registered email and password.",
+            "category": "Backend",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Configure Firebase Authentication for Email and Password"
+            ],
+            "acceptanceCriteria": [
+              "- Users can log in with their registered email and password"
+            ],
+            "parentTaskId": "T4",
+            "generatedAt": "2025-03-24T08:46:41.059Z"
+          },
+          {
+            "id": "T4.5",
+            "title": "Implement Password Recovery Functionality",
+            "description": "Allow users to recover their password by providing a recovery email.",
+            "category": "Backend",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Configure Firebase Authentication for Email and Password"
+            ],
+            "acceptanceCriteria": [
+              "- Users can request password recovery via email"
+            ],
+            "parentTaskId": "T4",
+            "generatedAt": "2025-03-24T08:46:41.059Z"
+          },
+          {
+            "id": "T4.6",
+            "title": "Test User Registration, Login, and Password Recovery",
+            "description": "Perform manual and automated tests to ensure the functionality of user registration, login, and password recovery.",
+            "category": "Testing",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Implement User Registration Functionality",
+              "Implement Login Functionality",
+              "Implement Password Recovery Functionality"
+            ],
+            "acceptanceCriteria": [
+              "- Manual tests for user registration, login, and password recovery are successful"
+            ],
+            "parentTaskId": "T4",
+            "generatedAt": "2025-03-24T08:46:41.059Z"
+          },
+          {
+            "id": "T5.1",
+            "title": "Study provided mockups",
+            "description": "Analyze the design details, layout, and interaction patterns of the home screen component as per the given mockups.",
+            "category": "Design",
+            "estimatedHours": 2,
+            "priority": "Medium",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "Understand the design elements and their relationships"
+            ],
+            "parentTaskId": "T5",
+            "generatedAt": "2025-03-24T08:47:55.184Z"
+          },
+          {
+            "id": "T5.2",
+            "title": "Set up React Native project structure",
+            "description": "Create a new React Native project with appropriate folder structure for the home screen component.",
+            "category": "Frontend|DevOps",
+            "estimatedHours": 1,
+            "priority": "High",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "Have a valid React Native project with the correct folder structure"
+            ],
+            "parentTaskId": "T5",
+            "generatedAt": "2025-03-24T08:47:55.185Z"
+          },
+          {
+            "id": "T5.3",
+            "title": "Create HomeScreen.js file",
+            "description": "Generate a new JavaScript file for the home screen component.",
+            "category": "Frontend",
+            "estimatedHours": 1,
+            "priority": "High",
+            "dependsOn": [
+              "Set up React Native project structure"
+            ],
+            "acceptanceCriteria": [
+              "Have a new HomeScreen.js file in the appropriate folder"
+            ],
+            "parentTaskId": "T5",
+            "generatedAt": "2025-03-24T08:47:55.185Z"
+          },
+          {
+            "id": "T5.4",
+            "title": "Implement basic home screen layout",
+            "description": "Add initial markup and styling to match the high-level design of the home screen.",
+            "category": "Frontend",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Create HomeScreen.js file"
+            ],
+            "acceptanceCriteria": [
+              "Have a basic functional layout that matches the design"
+            ],
+            "parentTaskId": "T5",
+            "generatedAt": "2025-03-24T08:47:55.185Z"
+          },
+          {
+            "id": "T5.5",
+            "title": "Implement component interactions",
+            "description": "Add necessary event listeners and logic to make the home screen responsive.",
+            "category": "Frontend",
+            "estimatedHours": 4,
+            "priority": "High",
+            "dependsOn": [
+              "Implement basic home screen layout"
+            ],
+            "acceptanceCriteria": [
+              "Have a fully functional home screen component with interactions"
+            ],
+            "parentTaskId": "T5",
+            "generatedAt": "2025-03-24T08:47:55.185Z"
+          },
+          {
+            "id": "T5.6",
+            "title": "Test home screen responsiveness",
+            "description": "Verify that the home screen component works correctly on different device sizes and orientations.",
+            "category": "Testing",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Implement component interactions"
+            ],
+            "acceptanceCriteria": [
+              "Ensure the home screen component is responsive across different device sizes and orientations"
+            ],
+            "parentTaskId": "T5",
+            "generatedAt": "2025-03-24T08:47:55.185Z"
+          },
+          {
+            "id": "T5.7",
+            "title": "Review and refactor (if needed)",
+            "description": "Thoroughly review the code for potential optimizations, refactoring if necessary.",
+            "category": "Frontend",
+            "estimatedHours": 2,
+            "priority": "Medium",
+            "dependsOn": [
+              "Test home screen responsiveness"
+            ],
+            "acceptanceCriteria": [
+              "Have a clean and optimized codebase that meets performance requirements"
+            ],
+            "parentTaskId": "T5",
+            "generatedAt": "2025-03-24T08:47:55.185Z"
+          },
+          {
+            "id": "T6.1",
+            "title": "Identify essential scenarios and edge cases for Home Screen Component",
+            "description": "List out all possible scenarios and edge cases that the unit tests for the home screen component should cover.",
+            "category": "Testing",
+            "estimatedHours": 2,
+            "priority": "Medium",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "All essential scenarios and edge cases are identified."
+            ],
+            "parentTaskId": "T6",
+            "generatedAt": "2025-03-24T08:48:53.213Z"
+          },
+          {
+            "id": "T6.2",
+            "title": "Set up testing environment for Home Screen Component",
+            "description": "Configure the required testing tools, libraries, or frameworks to write tests for the home screen component.",
+            "category": "Testing",
+            "estimatedHours": 2,
+            "priority": "High",
+            "dependsOn": [
+              "Identify essential scenarios and edge cases for Home Screen Component"
+            ],
+            "acceptanceCriteria": [
+              "Testing environment is successfully set up."
+            ],
+            "parentTaskId": "T6",
+            "generatedAt": "2025-03-24T08:48:53.214Z"
+          },
+          {
+            "id": "T6.3",
+            "title": "Write test case for loading the Home Screen Component",
+            "description": "Develop a unit test to ensure the home screen component loads correctly.",
+            "category": "Testing",
+            "estimatedHours": 2,
+            "priority": "Medium",
+            "dependsOn": [
+              "Set up testing environment for Home Screen Component"
+            ],
+            "acceptanceCriteria": [
+              "Test case is written to verify loading of the home screen component."
+            ],
+            "parentTaskId": "T6",
+            "generatedAt": "2025-03-24T08:48:53.214Z"
+          },
+          {
+            "id": "T6.4",
+            "title": "Write test case for rendering Home Screen Component data",
+            "description": "Develop a unit test to ensure that the home screen component correctly renders its data.",
+            "category": "Testing",
+            "estimatedHours": 2,
+            "priority": "Medium",
+            "dependsOn": [
+              "Set up testing environment for Home Screen Component"
+            ],
+            "acceptanceCriteria": [
+              "Test case is written to verify rendering of home screen component data."
+            ],
+            "parentTaskId": "T6",
+            "generatedAt": "2025-03-24T08:48:53.214Z"
+          },
+          {
+            "id": "T6.5",
+            "title": "Write test case for handling user interactions on the Home Screen Component",
+            "description": "Develop a unit test to ensure that the home screen component handles user interactions correctly.",
+            "category": "Testing",
+            "estimatedHours": 2,
+            "priority": "Medium",
+            "dependsOn": [
+              "Set up testing environment for Home Screen Component"
+            ],
+            "acceptanceCriteria": [
+              "Test case is written to verify user interaction handling."
+            ],
+            "parentTaskId": "T6",
+            "generatedAt": "2025-03-24T08:48:53.214Z"
+          },
+          {
+            "id": "T7.1",
+            "title": "Review Initial Designs",
+            "description": "Thoroughly examine designs provided, identify potential issues and areas for improvement.",
+            "category": "Design|Documentation",
+            "estimatedHours": 2,
+            "priority": "Medium",
+            "dependsOn": [],
+            "acceptanceCriteria": [
+              "- Designs are examined in detail."
+            ],
+            "parentTaskId": "T7",
+            "generatedAt": "2025-03-24T08:56:31.343Z"
+          },
+          {
+            "id": "T7.2",
+            "title": "Provide Preliminary Feedback",
+            "description": "Document constructive feedback on the reviewed designs, highlighting potential issues and suggestions for improvements.",
+            "category": "Design|Documentation",
+            "estimatedHours": 2,
+            "priority": "Medium",
+            "dependsOn": [
+              "Review Initial Designs"
+            ],
+            "acceptanceCriteria": [
+              "- Feedback is provided in a clear and constructive manner."
+            ],
+            "parentTaskId": "T7",
+            "generatedAt": "2025-03-24T08:56:31.343Z"
+          },
+          {
+            "id": "T7.3",
+            "title": "Discuss Preliminary Feedback with the Design Team",
+            "description": "Meet with the design team to discuss the preliminary feedback, address questions or concerns, and agree upon necessary changes.",
+            "category": "Communication|Design|Documentation",
+            "estimatedHours": 2,
+            "priority": "Low",
+            "dependsOn": [
+              "Provide Preliminary Feedback"
+            ],
+            "acceptanceCriteria": [
+              "- Feedback has been discussed with the design team."
+            ],
+            "parentTaskId": "T7",
+            "generatedAt": "2025-03-24T08:56:31.343Z"
+          },
+          {
+            "id": "T7.4",
+            "title": "Revise Designs Based on Feedback",
+            "description": "Update designs according to the agreed-upon changes and revisions.",
+            "category": "Design|Documentation",
+            "estimatedHours": 2,
+            "priority": "Low",
+            "dependsOn": [
+              "Discuss Preliminary Feedback with the Design Team"
+            ],
+            "acceptanceCriteria": [
+              "- Designs have been updated based on feedback."
+            ],
+            "parentTaskId": "T7",
+            "generatedAt": "2025-03-24T08:56:31.343Z"
+          },
+          {
+            "id": "T7.5",
+            "title": "Document Revised Design Changes",
+            "description": "Record all design changes and necessary documentation, including rationale for changes.",
+            "category": "Design|Documentation",
+            "estimatedHours": 2,
+            "priority": "Low",
+            "dependsOn": [
+              "Revise Designs Based on Feedback"
+            ],
+            "acceptanceCriteria": [
+              "- All design changes are documented."
+            ],
+            "parentTaskId": "T7",
+            "generatedAt": "2025-03-24T08:56:31.343Z"
+          }
+        ],
+        "risks": [
+          {
+            "category": "Resource",
+            "title": "Sprint Delivery",
+            "description": "The underutilization in Sprint 1 may lead to delays in subsequent sprints due to a backlog of work.",
+            "mitigation": "Plan for contingencies, such as buffer time or additional resources, to accommodate potential delays.",
+            "impact": "Medium",
+            "probability": "Medium",
+            "source": "ResourceAnalysisAgent"
+          },
+          {
+            "category": "Skill Gap",
+            "title": "Backend Development",
+            "description": "The team lacks a member with expertise in backend development, which may lead to delays or dependencies on external resources.",
+            "mitigation": "Consider hiring a temporary contractor or freelancer for the duration of this project, or provide additional training for one of the existing team members.",
+            "impact": "Medium",
+            "probability": "High",
+            "source": "ResourceAnalysisAgent"
+          },
+          {
+            "category": "Skill Gap",
+            "title": "Full-stack Development",
+            "description": "The team composition is specialized and lacks a full-stack developer, which may lead to communication issues and potential delays.",
+            "mitigation": "Consider hiring or training a team member with full-stack development skills for future projects.",
+            "impact": "Medium",
+            "probability": "High",
+            "source": "ResourceAnalysisAgent"
+          }
+        ],
+        "timeline": {
+          "milestones": [
+            {
+              "date": "key",
+              "title": "Define User Personas and User Stories",
+              "description": "Research and document user personas, their needs, goals, and pain points. Create a set of user stories that outline the functional requirements for the app.",
+              "type": "task_completion",
+              "relatedId": "T1"
+            },
+            {
+              "date": "key",
+              "title": "Design Wireframes for the Home Screen",
+              "description": "Create wireframes for the home screen of the app, focusing on layout, navigation, and main features.",
+              "type": "task_completion",
+              "relatedId": "T2"
+            },
+            {
+              "date": "key",
+              "title": "Create Mockups for the Home Screen",
+              "description": "Refine the wireframes into high-fidelity mockups, adding colors, fonts, and interactive elements.",
+              "type": "task_completion",
+              "relatedId": "T3"
+            }
+          ],
+          "events": [
+            {
+              "date": "Each sprint should have a clear goal",
+              "type": "sprint_start",
+              "title": "Sprint 1 Start",
+              "description": "Beginning of Sprint 1",
+              "relatedId": "Sprint 1"
+            },
+            {
+              "date": "key",
+              "type": "sprint_end",
+              "title": "Sprint 1 End",
+              "description": "End of Sprint 1",
+              "relatedId": "Sprint 1"
+            }
+          ],
+          "startDate": "Each sprint should have a clear goal",
+          "endDate": "key"
+        },
+        "resourceAllocation": {
+          "teamUtilization": {
+            "averageUtilization": 21,
+            "overallocatedSprints": 0,
+            "totalSprints": 1
+          },
+          "memberAllocation": [
+            {
+              "name": "Jordan",
+              "taskCount": 3,
+              "estimatedWorkload": "Medium"
+            },
+            {
+              "name": "Taylor",
+              "taskCount": 9,
+              "estimatedWorkload": "High"
+            },
+            {
+              "name": "Alex",
+              "taskCount": 10,
+              "estimatedWorkload": "High"
+            }
+          ],
+          "hasResourceRisks": false,
+          "recommendations": [
+            {
+              "type": "confirmation",
+              "description": "All sprints appear to have adequate resources. No adjustments needed."
+            }
+          ]
+        },
+        "metadata": {
+          "generatedAt": "2025-03-24T08:56:31.360Z",
+          "generatorVersion": "1.0.0",
+          "agentVersion": "2.0.0"
+        }
+      }
+    }
+  ]
+}

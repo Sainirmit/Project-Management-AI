@@ -1,0 +1,179 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Project State Schema",
+  "description": "Schema for saved project states and resumption information",
+  "type": "object",
+  "required": ["metadata", "state"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["id", "stageName", "timestamp", "version"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the project"
+        },
+        "stageName": {
+          "type": "string",
+          "description": "Name of the processing stage when state was saved"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the state was saved"
+        },
+        "version": {
+          "type": "string",
+          "description": "Version of the state format"
+        },
+        "description": {
+          "type": "string",
+          "description": "Optional description of this saved state"
+        },
+        "saveReason": {
+          "type": "string",
+          "enum": ["auto", "manual", "checkpoint", "error", "completed"],
+          "description": "Reason this state was saved"
+        }
+      }
+    },
+    "state": {
+      "type": "object",
+      "description": "The saved project state",
+      "required": ["projectDetails", "status"],
+      "properties": {
+        "projectDetails": {
+          "type": ["object", "null"],
+          "description": "Project initialization data"
+        },
+        "teamMembers": {
+          "type": "array",
+          "description": "Team members associated with the project"
+        },
+        "engineeredPrompt": {
+          "type": ["object", "null", "string"],
+          "description": "Engineered prompt for the LLM"
+        },
+        "projectOverview": {
+          "type": ["object", "null"],
+          "description": "Generated project overview"
+        },
+        "sprintPlan": {
+          "type": ["object", "null"],
+          "description": "Sprint planning data"
+        },
+        "resourceAnalysis": {
+          "type": ["object", "null"],
+          "description": "Resource analysis results"
+        },
+        "tasks": {
+          "type": "array",
+          "description": "Generated tasks"
+        },
+        "subtasks": {
+          "type": "array",
+          "description": "Generated subtasks"
+        },
+        "priorities": {
+          "type": "object",
+          "description": "Task and subtask priorities"
+        },
+        "assignments": {
+          "type": "object",
+          "description": "Worker assignments"
+        },
+        "compiledData": {
+          "type": ["object", "null"],
+          "description": "Compiled project data"
+        },
+        "verificationResult": {
+          "type": ["object", "null"],
+          "description": "Verification results"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "not_started",
+            "processing",
+            "resuming",
+            "completed",
+            "failed"
+          ],
+          "description": "Current processing status"
+        },
+        "errorLog": {
+          "type": "array",
+          "description": "Log of errors encountered during processing",
+          "items": {
+            "type": "object",
+            "properties": {
+              "timestamp": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "message": {
+                "type": "string"
+              },
+              "stack": {
+                "type": "string"
+              },
+              "stage": {
+                "type": "string"
+              },
+              "errorId": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "processingMetadata": {
+          "type": "object",
+          "description": "Metadata about the processing",
+          "properties": {
+            "startTime": {
+              "type": ["string", "null"],
+              "format": "date-time",
+              "description": "When processing started"
+            },
+            "endTime": {
+              "type": ["string", "null"],
+              "format": "date-time",
+              "description": "When processing completed or failed"
+            },
+            "lastStageCompleted": {
+              "type": ["string", "null"],
+              "description": "Last stage that was successfully completed"
+            },
+            "stageTimings": {
+              "type": "object",
+              "description": "Timing information for each stage",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "startTime": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "endTime": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "durationMs": {
+                    "type": "number"
+                  },
+                  "failed": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            },
+            "resumeCount": {
+              "type": "number",
+              "description": "Number of times this project has been resumed"
+            }
+          }
+        }
+      }
+    }
+  }
+}

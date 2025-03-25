@@ -3,8 +3,12 @@
  * Allows testing different scenarios with a single unified interface
  */
 
-import { generateAIProjectPlan } from "./ai/projectPlanGenerator.js";
+import { generateAgentBasedProjectPlan } from "./ai/agentBasedProjectPlanGenerator.js";
+import { OutputManager } from "./ai/utils/outputManager.js";
 import fs from "fs";
+
+// Initialize the output manager
+const outputManager = new OutputManager();
 
 // Test scenarios
 const TEST_SCENARIOS = {
@@ -20,19 +24,28 @@ const TEST_SCENARIOS = {
       techStack: ["React Native", "Firebase", "Node.js", "Express", "MongoDB"],
       teamMembers: [
         {
+          id: "tm1",
           name: "Alex",
-          roles: ["Frontend", "Mobile"],
+          role: "Frontend Developer",
+          skills: ["React Native", "JavaScript", "Mobile Development"],
           experience: "3 years",
+          availability: 40,
         },
         {
+          id: "tm2",
           name: "Taylor",
-          roles: ["Backend", "Database"],
+          role: "Backend Developer",
+          skills: ["Node.js", "Express", "MongoDB", "Firebase"],
           experience: "4 years",
+          availability: 40,
         },
         {
+          id: "tm3",
           name: "Jordan",
-          roles: ["UI/UX", "Frontend"],
+          role: "UI/UX Designer",
+          skills: ["UI Design", "UX Research", "Frontend", "CSS"],
           experience: "2 years",
+          availability: 35,
         },
       ],
     },
@@ -49,19 +62,28 @@ const TEST_SCENARIOS = {
       techStack: ["React", "NextJS", "TypeScript", "Firebase", "Node.js"],
       teamMembers: [
         {
+          id: "tm4",
           name: "Emma",
-          roles: ["Frontend", "UI/UX"],
+          role: "Frontend Developer",
+          skills: ["React", "TypeScript", "UI/UX", "CSS"],
           experience: "4 years",
+          availability: 40,
         },
         {
+          id: "tm5",
           name: "Michael",
-          roles: ["Backend", "DevOps"],
+          role: "Backend Developer",
+          skills: ["Node.js", "Firebase", "DevOps", "AWS"],
           experience: "5 years",
+          availability: 40,
         },
         {
+          id: "tm6",
           name: "Sophie",
-          roles: ["Data Analysis", "Machine Learning"],
+          role: "Data Analyst",
+          skills: ["Data Analysis", "Machine Learning", "Python", "Statistics"],
           experience: "3 years",
+          availability: 30,
         },
       ],
     },
@@ -85,32 +107,123 @@ const TEST_SCENARIOS = {
       ],
       teamMembers: [
         {
+          id: "tm7",
           name: "David",
-          roles: ["Frontend Lead", "UI/UX"],
+          role: "Frontend Lead",
+          skills: ["React", "Redux", "JavaScript", "UI/UX", "CSS"],
           experience: "5 years",
+          availability: 40,
         },
         {
+          id: "tm8",
           name: "Sarah",
-          roles: ["Backend Developer", "Database"],
+          role: "Backend Developer",
+          skills: ["Node.js", "Express", "MongoDB", "REST API", "GraphQL"],
           experience: "4 years",
+          availability: 40,
         },
         {
+          id: "tm9",
           name: "James",
-          roles: ["Full Stack", "DevOps"],
+          role: "Full Stack Developer",
+          skills: ["React", "Node.js", "DevOps", "Docker", "CI/CD"],
           experience: "3 years",
+          availability: 40,
         },
         {
+          id: "tm10",
           name: "Lisa",
-          roles: ["QA Engineer", "Documentation"],
+          role: "QA Engineer",
+          skills: ["Testing", "QA Automation", "Documentation", "Selenium"],
           experience: "3 years",
+          availability: 35,
         },
+      ],
+    },
+  },
+  multiagent: {
+    name: "Multi-Agent Based Project Plan",
+    data: {
+      projectName: "Healthcare Patient Portal",
+      projectType: "Web Application",
+      projectDescription:
+        "A secure healthcare patient portal allowing patients to schedule appointments, view medical records, communicate with providers, and manage prescriptions. The system must be HIPAA compliant and integrate with existing hospital systems.",
+      projectTimeline: "4 months",
+      priority: "Critical",
+      techStack: [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "AWS",
+        "OAuth2",
+      ],
+      teamMembers: [
+        {
+          id: "tm11",
+          name: "Robert",
+          role: "Frontend Lead",
+          skills: ["React", "TypeScript", "Accessibility", "UI Design"],
+          experience: "6 years",
+          availability: 40,
+        },
+        {
+          id: "tm12",
+          name: "Elena",
+          role: "Backend Lead",
+          skills: [
+            "Node.js",
+            "Express",
+            "OAuth",
+            "HIPAA Compliance",
+            "Security",
+          ],
+          experience: "7 years",
+          availability: 40,
+        },
+        {
+          id: "tm13",
+          name: "Marcus",
+          role: "DevOps Engineer",
+          skills: ["PostgreSQL", "AWS", "Docker", "CI/CD", "Kubernetes"],
+          experience: "5 years",
+          availability: 30,
+        },
+        {
+          id: "tm14",
+          name: "Priya",
+          role: "QA Lead",
+          skills: [
+            "Testing Automation",
+            "QA Processes",
+            "Technical Writing",
+            "Selenium",
+          ],
+          experience: "4 years",
+          availability: 35,
+        },
+        {
+          id: "tm15",
+          name: "Jason",
+          role: "Full Stack Developer",
+          skills: ["React", "Node.js", "API Integration", "HL7 Standards"],
+          experience: "3 years",
+          availability: 40,
+        },
+      ],
+      constraints: [
+        "Must be HIPAA compliant",
+        "Must integrate with existing hospital EHR system",
+        "Must pass security audit before launch",
+        "Must be accessible (WCAG 2.1 AA compliant)",
       ],
     },
   },
 };
 
 /**
- * Runs a test with the specified test data
+ * Runs a project plan test with the specified test data
  * @param {Object} testData - Project data for testing
  * @param {boolean} showBacklog - Whether to show backlog details
  */
@@ -122,69 +235,79 @@ async function runTest(testData, showBacklog = false) {
   );
 
   try {
-    console.log("\nGenerating project plan...");
-    const result = await generateAIProjectPlan(testData.data);
+    console.log("\nGenerating project plan using multi-agent system...");
+    const result = await generateAgentBasedProjectPlan(testData.data);
 
     if (result.success) {
       console.log("\n✅ Project plan generated successfully!");
 
-      // Display project overview
-      console.log("\n--- PROJECT OVERVIEW ---");
-      console.log(result.plan.overview);
+      // Display verification results if available
+      if (result.verification) {
+        console.log("\n--- VERIFICATION RESULTS ---");
+        console.log(`Passed: ${result.verification.passed}`);
+        console.log(`Total Checks: ${result.verification.totalChecks}`);
 
-      // Display backlog details if requested
-      if (showBacklog && result.plan.backlog) {
-        console.log("\n--- PRODUCT BACKLOG (PREVIEW) ---");
-
-        // Show structured tasks if available
         if (
-          typeof result.plan.backlog === "object" &&
-          result.plan.backlog.tasks
+          result.verification.criticalIssues &&
+          result.verification.criticalIssues.length > 0
         ) {
-          console.log("Structured Tasks:");
-          const tasksToShow = result.plan.backlog.tasks.slice(0, 3);
-          tasksToShow.forEach((task) => {
-            console.log(`\nTask: ${task.id} - ${task.title}`);
-            console.log(`  Assigned To: ${task.assignedTo}`);
-            console.log(`  Priority: ${task.priority}`);
-            console.log(`  Estimated Hours: ${task.estimatedHours}`);
-            console.log(`  Sprint: ${task.sprint}`);
+          console.log("\nCritical Issues:");
+          result.verification.criticalIssues.forEach((issue) => {
+            console.log(`- ${issue.description}`);
           });
-
-          if (result.plan.backlog.tasks.length > 3) {
-            console.log(
-              `\n... and ${result.plan.backlog.tasks.length - 3} more tasks`
-            );
-          }
-        } else {
-          // Show raw backlog text
-          const backlogText =
-            typeof result.plan.backlog === "string"
-              ? result.plan.backlog
-              : result.plan.backlog.rawText;
-
-          const backlogLines = backlogText.split("\n");
-          const previewLines = backlogLines.slice(0, 5);
-          console.log(previewLines.join("\n"));
-
-          if (backlogLines.length > 5) {
-            console.log(`\n... and ${backlogLines.length - 5} more lines`);
-          }
         }
       }
 
-      // Display milestones
-      console.log("\n--- KEY MILESTONES ---");
-      console.log(result.plan.milestones);
+      // Display project overview
+      if (result.plan.projectOverview) {
+        console.log("\n--- PROJECT OVERVIEW ---");
+        console.log(
+          result.plan.projectOverview.summary || "No summary available"
+        );
+      }
 
-      // Save the complete plan to a file
-      const outputFile = `${testData.data.projectName
-        .toLowerCase()
-        .replace(/\s+/g, "-")}-plan.json`;
-      fs.writeFileSync(outputFile, JSON.stringify(result.plan, null, 2));
-      console.log(`\nFull project plan saved to '${outputFile}'`);
+      // Display backlog details if requested
+      if (showBacklog && result.plan.tasks) {
+        console.log("\n--- PRODUCT BACKLOG (PREVIEW) ---");
+        const tasksToShow = result.plan.tasks.slice(0, 3);
+        tasksToShow.forEach((task) => {
+          console.log(`\nTask: ${task.id} - ${task.title}`);
+          console.log(`  Description: ${task.description.substring(0, 50)}...`);
+          console.log(`  Priority: ${task.priority}`);
+          console.log(`  Estimated Hours: ${task.estimatedHours}`);
+          console.log(`  Assigned To: ${task.assignedTo || "Unassigned"}`);
+        });
+
+        if (result.plan.tasks.length > 3) {
+          console.log(`\n... and ${result.plan.tasks.length - 3} more tasks`);
+        }
+      }
+
+      // Display milestones if available
+      if (result.plan.milestones && result.plan.milestones.length > 0) {
+        console.log("\n--- KEY MILESTONES ---");
+        result.plan.milestones.forEach((milestone) => {
+          console.log(`- ${milestone.name} (${milestone.date})`);
+        });
+      }
+
+      // Save to the combined output file
+      outputManager.saveProjectPlan(
+        result.plan,
+        testData.name,
+        testData.data.projectName
+      );
+      console.log(`\nProject plan saved to combined output file`);
+
+      // Optional: Clean up old output files
+      if (process.argv.includes("--cleanup")) {
+        outputManager.cleanupOldOutputFiles();
+      }
     } else {
       console.log("\n❌ Error generating project plan:", result.error);
+      if (result.stageFailed) {
+        console.log(`Failed at stage: ${result.stageFailed}`);
+      }
     }
   } catch (error) {
     console.error("An unexpected error occurred:", error);
@@ -203,7 +326,15 @@ async function main() {
   console.log("AI Project Management Agent - Test Manager");
   console.log("=========================================");
 
+  if (testType === "cleanup") {
+    // Just clean up old files
+    outputManager.cleanupOldOutputFiles();
+    console.log("Cleaned up old output files");
+    return;
+  }
+
   if (TEST_SCENARIOS[testType]) {
+    // Run the test with the specified scenario
     await runTest(TEST_SCENARIOS[testType], showBacklog);
   } else if (testType === "all") {
     // Run all test scenarios sequentially
@@ -213,7 +344,10 @@ async function main() {
     }
   } else {
     console.log(`❌ Unknown test type: ${testType}`);
-    console.log("Available test types: basic, custom, backlog, all");
+    console.log(
+      "Available test types: basic, custom, backlog, multiagent, all, cleanup"
+    );
+    console.log("Options: --backlog, --cleanup");
   }
 }
 
